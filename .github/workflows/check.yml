@@ -38,7 +38,7 @@ jobs:
           mkdir -p bin
           curl -fsSL https://github.com/SagerNet/sing-box/releases/download/v1.14.4/sing-box-1.14.4-linux-amd64.tar.gz -o /tmp/sb.tar.gz
           tar -xzf /tmp/sb.tar.gz -C /tmp
-          find /tmp -name sing-box -type f -exec cp {} bin/sing-box \;
+          cp /tmp/sing-box-1.14.4-linux-amd64/sing-box bin/sing-box
           chmod +x bin/sing-box
           ./bin/sing-box version
 
