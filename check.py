@@ -24,7 +24,7 @@ check.py — 自建 VPN 节点订阅实测过滤器（第一版）
 依赖：python3 标准库 + curl + sing-box 二进制。本机资源有限：并发默认 24，单块 110 节点。
 """
 import argparse, base64, collections, concurrent.futures as cf, json, math, os, re
-import socket, statistics, subprocess, sys, time, urllib.parse as up
+import socket, statistics, subprocess, sys, time, urllib.parse as up, urllib.request
 from datetime import datetime, timezone, timedelta
 
 BASE = os.path.dirname(os.path.abspath(__file__))
@@ -33,6 +33,15 @@ DEFAULT_SRC = [
     "/home/hatch/workspace/research/vpn-configs-for-russia/BLACK_VLESS_RUS_mobile.txt",
     "/home/hatch/workspace/research/vpn-configs-for-russia/BLACK_SS+All_RUS.txt",
 ]
+EXTRA_SOURCES = [
+    ("https://raw.githubusercontent.com/aneek0/goida-vpn-configs/main/githubmirror/4.txt", "goida-4.txt"),
+    ("https://raw.githubusercontent.com/aneek0/goida-vpn-configs/main/githubmirror/5.txt", "goida-5.txt"),
+    ("https://raw.githubusercontent.com/aneek0/goida-vpn-configs/main/githubmirror/1.txt", "goida-1.txt"),
+    ("https://raw.githubusercontent.com/aneek0/goida-vpn-configs/main/githubmirror/3.txt", "goida-3.txt"),
+]
+MAX_TEST = 4500          # 单轮最多实测节点数（按国内可用性优先级截断）
+MAX_SUB = 500            # 订阅最多保留条数
+SECOND_URLS = ("https://cp.cloudflare.com/generate_204", "https://www.google.com/generate_204")
 CST = timezone(timedelta(hours=8))
 LINK_RE = re.compile(r'(?P<scheme>[a-zA-Z][a-zA-Z0-9+.-]*)://[^\s"\'<>]+')
 
@@ -315,6 +324,40 @@ CONVERTERS = {
 }
 UDP_PROTO = {'hysteria2', 'tuic'}
 
+# ---------------- 节点分类（国内可用性启发式） ----------------
+
+def class_rank(item):
+    """按“在国内网络下更可能可用”分层：Reality(0) > TLS+CDN类传输(1) > TLS直连(2) > SS(3) > UDP类(4) > 明文(5)。
+    仅用于测试优先级与订阅排序，不代表实测结论。"""
+    ob = item["outbound"]
+    tls = ob.get("tls") or {}
+    tr = (ob.get("transport") or {}).get("type", "tcp")
+    if tls.get("reality"):
+        return 0
+    if ob["type"] == "shadowsocks":
+        return 3
+    if ob["type"] in ("hysteria2", "tuic"):
+        return 4
+    if tls.get("enabled"):
+        return 1 if tr in ("ws", "grpc", "httpupgrade", "http") else 2
+    return 5
+
+def fetch_extra_sources(workdir):
+    paths = []
+    for url, name in EXTRA_SOURCES:
+        p = os.path.join(workdir, name)
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "vpn-sub-checker"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                data = r.read()
+            with open(p, "wb") as f:
+                f.write(data)
+            paths.append(p)
+            print(f"附加源 {name}：{len(data)} 字节", flush=True)
+        except Exception as e:
+            print(f"附加源 {name} 拉取失败（跳过）：{e}", flush=True)
+    return paths
+
 # ---------------- stage 1: parse & dedup ----------------
 
 def parse_sources(src_files):
@@ -456,10 +499,10 @@ def wait_port(port, proc, timeout=12):
             time.sleep(0.25)
     return False
 
-def curl_test(port, timeout):
-    """Returns (ok, latency_ms, detail). Tries http then https generate_204."""
+def curl_test(port, timeout, urls=("http://www.gstatic.com/generate_204", "https://www.gstatic.com/generate_204")):
+    """Returns (ok, latency_ms, detail). Tries the given generate_204 URLs in order."""
     last = ''
-    for url in ("http://www.gstatic.com/generate_204", "https://www.gstatic.com/generate_204"):
+    for url in urls:
         try:
             r = subprocess.run(
                 ["curl", "-s", "-o", "/dev/null", "-w", "%{http_code} %{time_total}",
@@ -479,7 +522,7 @@ def curl_test(port, timeout):
             last = f"{url} -> {e}"
     return False, None, last
 
-def test_chunk(chunk, base_port, sb, workdir, timeout, concurrency):
+def test_chunk(chunk, base_port, sb, workdir, timeout, concurrency, urls=None):
     """Returns list of result dicts aligned with chunk."""
     cfg = build_chunk_config(chunk, base_port)
     p = os.path.join(workdir, f"run-{base_port}.json")
@@ -500,11 +543,11 @@ def test_chunk(chunk, base_port, sb, workdir, timeout, concurrency):
                 pass
             if len(chunk) > 1:  # bisect once to isolate a bad outbound
                 mid = len(chunk) // 2
-                return (test_chunk(chunk[:mid], base_port, sb, workdir, timeout, concurrency) +
-                        test_chunk(chunk[mid:], base_port + 400, sb, workdir, timeout, concurrency))
+                return (test_chunk(chunk[:mid], base_port, sb, workdir, timeout, concurrency, urls) +
+                        test_chunk(chunk[mid:], base_port + 400, sb, workdir, timeout, concurrency, urls))
             return [{"status": "infra_error", "latency_ms": None, "detail": f"sing-box start failed: {err}"} for _ in chunk]
         def job(i):
-            ok, lat, det = curl_test(base_port + i, timeout)
+            ok, lat, det = curl_test(base_port + i, timeout) if urls is None else curl_test(base_port + i, timeout, urls)
             return i, {"status": "alive" if ok else "dead", "latency_ms": lat, "detail": det}
         results = [None] * len(chunk)
         with cf.ThreadPoolExecutor(max_workers=concurrency) as ex:
@@ -542,7 +585,9 @@ def main():
     t_start = datetime.now(CST)
     print(f"[{t_start:%H:%M:%S}] sing-box: {sb_version}", flush=True)
 
-    nodes, raw_count, per_file, unknown_scheme = parse_sources(args.src)
+    extra_paths = fetch_extra_sources(args.work)
+    all_src = list(args.src) + extra_paths
+    nodes, raw_count, per_file, unknown_scheme = parse_sources(all_src)
     proto_raw = collections.Counter(n['scheme'] for n in nodes)
     print(f"源文件链接行 {raw_count}，可解析协议 {len(nodes)}：{dict(proto_raw)}", flush=True)
 
@@ -550,8 +595,16 @@ def main():
     proto_uniq = collections.Counter(it['outbound']['type'] for it in uniq)
     print(f"去重后 {len(uniq)}，转换失败 {len(conv_fail)}：{dict(proto_uniq)}", flush=True)
 
-    valid, check_fail = validate_all(uniq, args.bin, args.work)
+    valid, check_fail = validate_all(uniq, args.bin, args.work, workers=32)
     print(f"sing-box check 通过 {len(valid)}，失败 {len(check_fail)}", flush=True)
+
+    # 按国内可用性优先级排序并截断到 MAX_TEST，其余本轮不测（如实记录）
+    valid.sort(key=lambda it: (class_rank(it), it['src']))
+    deferred = valid[MAX_TEST:]
+    deferred_n = len(deferred)
+    valid = valid[:MAX_TEST]
+    if deferred:
+        print(f"按优先级截断：本轮实测 {len(valid)}，延后 {deferred_n}", flush=True)
 
     env_blocked, env_evidence = probe_env(valid)
     if env_blocked:
@@ -579,6 +632,18 @@ def main():
         alive_n = sum(1 for r in res if r['status'] == 'alive')
         print(f"块 {ci+1}/{len(chunks)}：{len(chunk)} 个，存活 {alive_n}", flush=True)
 
+    # 二次验证：对存活节点换一个目标再测一次，两次都通才算“双验”
+    verified2_ids = set()
+    alive_items = [it for it in to_test if results.get(id(it), {}).get('status') == 'alive']
+    if alive_items:
+        for j in range(0, len(alive_items), args.chunk):
+            part = alive_items[j:j + args.chunk]
+            res2 = test_chunk(part, 42000 + j, args.bin, args.work, args.timeout, args.concurrency, urls=SECOND_URLS)
+            for item, r2 in zip(part, res2):
+                if r2['status'] == 'alive':
+                    verified2_ids.add(id(item))
+        print(f"二次验证通过 {len(verified2_ids)}/{len(alive_items)}", flush=True)
+
     t_end = datetime.now(CST)
 
     # assemble full records
@@ -596,9 +661,13 @@ def main():
             rec = r
         records.append({"link": item['link'], "proto": item['outbound']['type'],
                         "server": item['outbound']['server'], "port": item['outbound']['server_port'],
-                        "src": item['src'], **rec})
-    alive = sorted([r for r in records if r['status'] == 'alive'],
-                   key=lambda r: r['latency_ms'] if r['latency_ms'] is not None else 10**9)
+                        "src": item['src'], "_rank": class_rank(item),
+                        "verified2": id(item) in verified2_ids, **rec})
+    alive = [r for r in records if r['status'] == 'alive']
+    alive.sort(key=lambda r: (0 if r.get('verified2') else 1, r.get('_rank', 5),
+                              r['latency_ms'] if r['latency_ms'] is not None else 10**9))
+    alive_all_n = len(alive)
+    alive = alive[:MAX_SUB]
 
     with open(os.path.join(args.work, 'results.json'), 'w') as f:
         json.dump({"records": records,
@@ -628,10 +697,10 @@ def main():
     xhttp_n = sum(1 for f in conv_fail if 'xhttp' in f['error'])
     tested_n = len([r for r in records if r['status'] in ('alive', 'dead')])
     rep = []
-    rep.append("# VPN 节点订阅实测报告（第一版）\n")
+    rep.append("# VPN 节点订阅实测报告（v2：多源合并 + 双目标验证 + 国内优先分层）\n")
     rep.append(f"- 测试开始：{t_start:%Y-%m-%d %H:%M:%S} CST；结束：{t_end:%Y-%m-%d %H:%M:%S} CST（耗时 {(t_end - t_start).total_seconds():.0f} 秒）")
     rep.append(f"- 测试工具：{sb_version}（官方 GitHub release，linux-amd64）")
-    rep.append(f"- 源文件（igareck 黑名单，运行时拉取最新版）：{', '.join(os.path.basename(s) for s in args.src)}")
+    rep.append(f"- 源文件（运行时拉取最新版）：{', '.join(os.path.basename(s) for s in all_src)}")
     rep.append(f"- 参数：并发 {args.concurrency}，单节点超时 {args.timeout}s，块大小 {args.chunk}，TCP 预筛 {'因环境阻断跳过' if env_blocked else ('关' if args.no_prefilter else '开（3.5s）')}")
     rep.append("\n## 总览\n")
     rep.append(f"- 源文件链接行总数：**{raw_count}**（按文件：{per_file}）")
@@ -642,7 +711,9 @@ def main():
     if env_blocked:
         rep.append(f"- 实际完成代理实测：**0**（环境阻断，见下节）；存活：**0（未经证实，不代表节点真实状态）**")
     else:
-        rep.append(f"- 实际完成代理实测（含预筛淘汰计死）：**{tested_n}**；存活：**{len(alive)}**；存活率：**{(len(alive)/tested_n*100 if tested_n else 0):.1f}%**")
+        rep.append(f"- 实际完成代理实测（含预筛淘汰计死）：**{tested_n}**；存活：**{alive_all_n}**；存活率：**{(alive_all_n/tested_n*100 if tested_n else 0):.1f}%**")
+        v2n = len([r for r in records if r['status'] == 'alive' and r.get('verified2')])
+        rep.append(f"- 双验通过（两个不同目标都请求成功）：**{v2n}**；订阅按「双验优先 → 分层（Reality > TLS+CDN传输 > TLS直连 > SS > UDP类 > 明文）→ 延迟」排序，保留前 {MAX_SUB} 条")
     if env_blocked:
         rep.append("\n## ⚠ 环境限制（本次实测未能完成的原因）\n")
         rep.append("本机（ama 的 Linux 虚拟机）出站网络由平台网关管控：普通网页流量只能走指定的 HTTP 出口代理；"
@@ -670,6 +741,7 @@ def main():
         if p not in present:
             rep.append(f"- {p}：三份源文件本期快照中实际为 0 条（BLACK_SS+All 文件名虽含 SS，本期内容为 vmess/trojan），无可测样本。解析器已支持该协议。")
     rep.append(f"- TCP 预筛淘汰：{len(pre_dead)} 条（端口 TCP 不可达，直接计死，未再走代理请求；UDP 类协议不做预筛）。")
+    rep.append(f"- 优先级截断未测：{deferred_n} 条（池子扩大后按国内可用性分层排序，超出单轮 {MAX_TEST} 上限的部分本轮未测，不代表其真实状态）。")
     if args.limit:
         rep.append(f"- 注意：本次为 --limit {args.limit} 冒烟运行，未测节点 {len(valid) - len(to_test) - len(pre_dead)} 条。")
     rep.append("\n## 测试方法\n")
@@ -678,7 +750,7 @@ def main():
                "`http://www.gstatic.com/generate_204`，失败再试 https 版，返回 200/204 记为存活，"
                "延迟为该次请求总耗时。只有代理请求成功才算活，端口通不算。")
     rep.append("\n## 产出\n")
-    rep.append(f"- `output/sub.txt`：{len(alive)} 条存活节点原链接，按延迟升序。")
+    rep.append(f"- `output/sub.txt`：{len(alive)} 条存活节点原链接，按「双验 → 分层 → 延迟」排序（本轮存活共 {alive_all_n} 条，保留前 {MAX_SUB} 条）。")
     rep.append("- `output/sub_base64.txt`：sub.txt 的整文件 Base64 版。")
     rep.append("- `work/results.json`：全部节点明细（状态/延迟/失败原因）、转换失败与校验失败清单。")
     report = '\n'.join(rep) + '\n'
