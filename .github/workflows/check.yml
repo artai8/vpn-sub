@@ -2,7 +2,7 @@ name: check-nodes
 
 on:
   schedule:
-    - cron: '30 */6 * * *'
+    - cron: '15 * * * *'
   workflow_dispatch:
   push:
     branches: [main]
@@ -20,7 +20,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
 
@@ -33,30 +33,23 @@ jobs:
           curl -fsSL "$base/BLACK_SS%2BAll_RUS.txt" -o "src/BLACK_SS+All_RUS.txt"
           wc -l src/*.txt
 
-      - name: Install sing-box 1.14.4
-        run: |
-          mkdir -p bin
-          curl -fsSL https://github.com/SagerNet/sing-box/releases/download/v1.14.4/sing-box-1.14.4-linux-amd64.tar.gz -o /tmp/sb.tar.gz
-          tar -xzf /tmp/sb.tar.gz -C /tmp
-          cp /tmp/sing-box-1.14.4-linux-amd64/sing-box bin/sing-box
-          chmod +x bin/sing-box
-          ./bin/sing-box version
+      - name: Install Python deps
+        run: pip install pyyaml
 
       - name: Run checker
-        run: |
-          python3 check.py --src src/BLACK_VLESS_RUS.txt src/BLACK_VLESS_RUS_mobile.txt "src/BLACK_SS+All_RUS.txt" --concurrency 32
+        run: python3 check.py --src src/BLACK_VLESS_RUS.txt src/BLACK_VLESS_RUS_mobile.txt "src/BLACK_SS+All_RUS.txt" --concurrency 48
 
       - name: Commit results
         run: |
-          if [ ! -s output/sub.txt ]; then
-            echo "sub.txt is empty - keeping previous results, skipping commit"
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/sub.txt output/sub_base64.txt output/report.md
+          if [ ! -s output/sub.txt ]; then
+            echo "sub.txt empty or missing - keeping previous results, nothing to commit."
+            exit 0
+          fi
+          git add output/
           if git diff --cached --quiet; then
-            echo "no changes"
+            echo "No changes."
           else
             git commit -m "update subscription $(date -u +%Y-%m-%dT%H:%MZ)"
             git push
