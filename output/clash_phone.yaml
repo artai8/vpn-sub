@@ -1,0 +1,757 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+ipv6: true
+unified-delay: true
+tcp-concurrent: true
+global-client-fingerprint: chrome
+generated-by: vpn-sub-phone-verified (from user phone delay test 2026-11-15 09:45
+  CST)
+generated-at: '2026-11-15T01:58:31.243663+00:00'
+proxies:
+- name: '[OpenRay] 🌐XX-1098'
+  type: vless
+  server: zfapi.zalolink.com
+  port: 43149
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 | DEU 10
+  server: 5.231.28.177
+  port: 443
+  type: vless
+  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: images.porsche.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: '[OpenRay] 🌐XX-486'
+  type: vless
+  server: edge.bookmai.com
+  port: 443
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  udp: true
+  servername: mother-earth.fyi
+  client-fingerprint: edge
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇺🇸US-10'
+  type: vless
+  server: 163.245.42.87
+  port: 443
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  udp: true
+  servername: mother-earth.fyi
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  flow: xtls-rprx-vision
+- name: 🌐سرور-11
+  type: vless
+  server: 5.175.171.30
+  port: 443
+  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
+  udp: true
+  servername: assets-v2.porsche.com
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇩🇪DE-207'
+  type: vless
+  server: 5.231.45.196
+  port: 443
+  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
+  udp: true
+  servername: images.porsche.com
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  flow: xtls-rprx-vision
+- name: 🇲🇽 Mexico, Mexico City | [BL]
+  type: vless
+  server: 179.255.125.140
+  port: 443
+  uuid: 68f014b7-e245-4528-890e-289f91d7c968
+  udp: true
+  servername: www.amazon.com
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: ReJYDmhM_L7Y-MzRirsSfUF5ohG-uY9qXGvp6T-ySHs
+    short-id: 82bea5d7
+  flow: xtls-rprx-vision
+- name: 🇮🇹 意大利 | ITA 5
+  server: 83.141.92.190
+  port: 443
+  type: vless
+  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: images.porsche.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: '[OpenRay] 🇺🇸US-1403'
+  type: vless
+  server: 132.243.163.89
+  port: 443
+  uuid: 632cd343-1e8f-4bf6-a9a2-20ada1f6970f
+  udp: true
+  servername: 3fb2b6t.se1.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA
+    short-id: 1061f1b1cdaad3ad
+  flow: xtls-rprx-vision
+- name: 🇲🇽 Mexico, Mexico City | [BL]-2
+  type: vless
+  server: 179.255.125.140
+  port: 443
+  uuid: 5ebb4b41-7908-4d83-904b-8a941ea149e9
+  udp: true
+  servername: www.amazon.com
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: ReJYDmhM_L7Y-MzRirsSfUF5ohG-uY9qXGvp6T-ySHs
+    short-id: 82bea5d7
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🌐XX-1556'
+  type: vless
+  server: edge.bookmai.com
+  port: 443
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  udp: true
+  servername: mother-earth.fyi
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  flow: xtls-rprx-vision
+  network: raw
+- name: 🇸🇪 瑞典 | SWE 2
+  server: 132.243.163.89
+  port: 443
+  type: vless
+  uuid: 632cd343-1e8f-4bf6-a9a2-20ada1f6970f
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA
+    short-id: 1061f1b1cdaad3ad
+  servername: 3fb2b6t.se1.h1clayd.click
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇩🇪 德国 | DEU 6
+  server: 132.243.163.154
+  port: 443
+  type: vless
+  uuid: 55458d10-24ab-4ea6-a522-13741b546f2a
+  tls: true
+  reality-opts:
+    public-key: shUbIWcBJdXaDzO80KqTU9exgMarUCOiiZ56Dwl7XVU
+    short-id: 7a8e24da4eb2c1b5
+  servername: ec7a81g.de15.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 43f41cd7fee0
+  udp: true
+- name: '[OpenRay] 🌐XX-553'
+  type: vless
+  server: zfapi.zalolink.com
+  port: 54528
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  servername: www.apple.com
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🌐XX-1736'
+  type: vless
+  server: ec7a81g.de19.h1clayd.click
+  port: 443
+  uuid: 07df3711-07a1-4649-9a61-3f16cb931d02
+  udp: true
+  servername: ec7a81g.de19.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: shUbIWcBJdXaDzO80KqTU9exgMarUCOiiZ56Dwl7XVU
+    short-id: 7a8e24da4eb2c1b5
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 43f41cd7fee0
+- name: '[OpenRay] 🌐XX-260'
+  type: vless
+  server: zfapi.zalolink.com
+  port: 54528
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  servername: www.apple.com
+  client-fingerprint: ios
+  tls: true
+  reality-opts:
+    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
+    short-id: 54cca3c1c1c7
+  flow: xtls-rprx-vision
+  network: raw
+- name: '[OpenRay] 🌐XX-294'
+  type: vless
+  server: zfapi.zalolink.com
+  port: 55688
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  servername: bilibili-vn.biliimg.com
+  client-fingerprint: ios
+  tls: true
+  reality-opts:
+    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
+    short-id: 865c1b2c
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🌐XX-163'
+  type: vless
+  server: zfapi.zalolink.com
+  port: 11802
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: FUBjYwXlKIVwF7IuJf5dt_HU2sUnrEt10s4TIlTe8Q4
+    short-id: 6c84fbac2d
+  flow: xtls-rprx-vision
+- name: 日本+东京Amazon数据中心
+  type: vless
+  server: zfapi.zalolink.com
+  port: 47691
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  udp: true
+  servername: m.media-amazon.com
+  client-fingerprint: safari
+  tls: true
+  reality-opts:
+    public-key: 6PbC7GxOg_YdXya-53llPReUzoU_yknQbkDvI4uorBg
+    short-id: 2905326a
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🌐XX-104'
+  type: vless
+  server: 345739t.de19.h1clayd.click
+  port: 443
+  uuid: 07df3711-07a1-4649-9a61-3f16cb931d02
+  udp: true
+  servername: 345739t.de19.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA
+    short-id: 23732d14a527990d
+- name: '[OpenRay] 🇺🇸US-2850'
+  type: vless
+  server: 13.143.176.250
+  port: 443
+  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
+  udp: true
+  servername: images.porsche.com
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  flow: xtls-rprx-vision
+- name: 🇺🇸 美国 | USA
+  server: 162.35.38.156
+  port: 443
+  type: vless
+  uuid: a88d4614-2134-404c-9479-6aba1ca9cdfd
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: UkUbCx7k5ykWTJTr1jqCOxns6TwvTAbfR0JvJzuALjM
+    short-id: a62b22480f962a1d
+  servername: 2499dbt.us12.h1clayd.click
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇪🇪 爱沙尼亚 | EST
+  server: 13.143.176.250
+  port: 443
+  type: vless
+  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: images.porsche.com
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: '[OpenRay] 🇺🇸US-2273'
+  type: vless
+  server: 162.35.38.156
+  port: 443
+  uuid: a88d4614-2134-404c-9479-6aba1ca9cdfd
+  udp: true
+  servername: 2499dbt.us12.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: UkUbCx7k5ykWTJTr1jqCOxns6TwvTAbfR0JvJzuALjM
+    short-id: a62b22480f962a1d
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🌐XX-743'
+  type: vless
+  server: 76574ct.nl8.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 76574ct.nl8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
+    short-id: 2ca59bdc5121f921
+- name: '[OpenRay] 🇺🇸US-1124'
+  type: vless
+  server: 34.55.45.96
+  port: 443
+  uuid: 304c51f8-5e21-4eea-bdc0-4ebeb6cb811d
+  udp: true
+  servername: www.clearblade.com
+  client-fingerprint: random
+  tls: true
+  reality-opts:
+    public-key: 1Ft_BCjUX8mvTZvdZXPgcUCipjNXVjzUnWfi9WjTLl8
+    short-id: ce5ca552f4edc872
+  network: xhttp
+- name: '[OpenRay] 🌐XX-732'
+  type: vless
+  server: 8a2e72t.nl11.h1clayd.click
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+  network: raw
+- name: '[OpenRay] 🌐XX-230'
+  type: vless
+  server: 4935e4t.de25.h1clayd.click
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 4935e4t.de25.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
+    short-id: 6976d670818644cc
+  flow: xtls-rprx-vision
+- name: 🌐سرور-19
+  type: vless
+  server: ec7a81g.de15.h1clayd.click
+  port: 443
+  uuid: 55458d10-24ab-4ea6-a522-13741b546f2a
+  udp: true
+  servername: ec7a81g.de15.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: shUbIWcBJdXaDzO80KqTU9exgMarUCOiiZ56Dwl7XVU
+    short-id: 7a8e24da4eb2c1b5
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 43f41cd7fee0
+- name: '[OpenRay] 🌐XX-752'
+  type: vmess
+  server: 188.114.99.137
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: '[OpenRay] 🌐XX-334'
+  type: vless
+  server: 8a2e72t.nl11.h1clayd.click
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: 🇩🇪 德国 | DEU 3
+  server: 178.18.158.12
+  port: 43000
+  type: vless
+  uuid: a741d82e-6087-466d-b590-f24e2245d12c
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: KeFxVlEEuDN8alZBsrXiX9yrcY2-H7lcdzXWjtrIWy0
+    short-id: a9c3bda4
+  servername: 178.18.158.12
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: 🇺🇸 United States | 🌐 | [BL]
+  type: trojan
+  server: fastly2.dunnexa.ir
+  port: 443
+  password: jcTG9WSWMJAmR4rv10xpww
+  udp: true
+  sni: cdn.akamai.steamstatic.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER
+    headers:
+      Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
+- name: '[OpenRay] 🇮🇱IL-6'
+  type: vless
+  server: 79.182.39.131
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- name: CA【高速节点：https://tt.vg/vip】17
+  type: vmess
+  server: 172.67.190.164
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: 🇦🇱 AL_29
+  server: 196.196.148.85
+  port: 443
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: '[OpenRay] 🌐XX-45'
+  type: vless
+  server: 38917fx.es1.h1clayd.click
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 38917fx.es1.h1clayd.click
+  client-fingerprint: edge
+  tls: true
+  reality-opts:
+    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
+    short-id: d5501b156391e01d
+  network: xhttp
+- name: '[OpenRay] 🌐XX-1889'
+  type: vless
+  server: f0d7aft.nl17.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: f0d7aft.nl17.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
+    short-id: 8956c57cb4c4f8d2
+- name: 🇺🇸 美国 | USA 7
+  server: 217.217.47.140
+  port: 50769
+  type: vless
+  uuid: 6f6318b1-3ba5-4106-9365-8a8e19f04bd3
+  tls: true
+  encryption: mlkem768x25519plus.native.0rtt.Q87mgMmTfbfB0W6gBMUjZGuHSPmo8Ot7-obrW5-BD3o
+  reality-opts:
+    public-key: 7Q09Z_KU9vXvif4-pLfVc_Zwil-X4k41Iesv-HCk4wI
+    short-id: 7f3d68ed44
+  servername: ops.gx.nvidia.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: '[OpenRay] 🌐XX-1047'
+  type: vless
+  server: 961ec0g.nl17.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 961ec0g.nl17.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
+    short-id: 6d289ff0f47c0aac
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 7d5abcd7d8a1
+- name: 🇪🇸 西班牙 | ESP 2
+  server: 196.196.149.80
+  port: 443
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: '[OpenRay] 🇺🇸US-523'
+  type: vless
+  server: 162.35.101.177
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 0592efg.us8.h1clayd.click
+  client-fingerprint: edge
+  tls: true
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 99f2107b03f8
+- name: 🇪🇸 西班牙 | ESP
+  server: 7aa271t.es1.h1clayd.click
+  port: 443
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 🇪🇸 西班牙 | ESP 3
+  server: 196.199.122.2
+  port: 443
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: firefox
+  network: tcp
+  udp: true
+- name: ES【高速节点：https://tt.vg/vip】12
+  type: vless
+  server: 196.245.52.187
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 04535dt.us8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+    short-id: ba2a3dce62b99092
+- name: '[OpenRay] 🇳🇬NG-9'
+  type: vless
+  server: 196.196.149.81
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇳🇪NE-5'
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+- name: '[OpenRay] 🇱🇾LY-10'
+  type: vless
+  server: 196.199.122.2
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 38917fx.es1.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
+    short-id: d5501b156391e01d
+  network: xhttp
+- name: '[OpenRay] 🇳🇬NG-3'
+  type: vless
+  server: 196.196.149.81
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 38917fx.es1.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
+    short-id: d5501b156391e01d
+  network: xhttp
+- name: '[OpenRay] 🇳🇬NG-1'
+  type: vless
+  server: 196.196.149.80
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 38917fx.es1.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
+    short-id: d5501b156391e01d
+  network: xhttp
+proxy-groups:
+- name: AUTO-FAST
+  type: url-test
+  proxies:
+  - '[OpenRay] 🌐XX-1098'
+  - 🇩🇪 德国 | DEU 10
+  - '[OpenRay] 🌐XX-486'
+  - '[OpenRay] 🇺🇸US-10'
+  - 🌐سرور-11
+  - '[OpenRay] 🇩🇪DE-207'
+  - 🇲🇽 Mexico, Mexico City | [BL]
+  - 🇮🇹 意大利 | ITA 5
+  - '[OpenRay] 🇺🇸US-1403'
+  - 🇲🇽 Mexico, Mexico City | [BL]-2
+  - '[OpenRay] 🌐XX-1556'
+  - 🇸🇪 瑞典 | SWE 2
+  - 🇩🇪 德国 | DEU 6
+  - '[OpenRay] 🌐XX-553'
+  - '[OpenRay] 🌐XX-1736'
+  - '[OpenRay] 🌐XX-260'
+  - '[OpenRay] 🌐XX-294'
+  - '[OpenRay] 🌐XX-163'
+  - 日本+东京Amazon数据中心
+  - '[OpenRay] 🌐XX-104'
+  - '[OpenRay] 🇺🇸US-2850'
+  - 🇺🇸 美国 | USA
+  - 🇪🇪 爱沙尼亚 | EST
+  - '[OpenRay] 🇺🇸US-2273'
+  - '[OpenRay] 🌐XX-743'
+  - '[OpenRay] 🇺🇸US-1124'
+  - '[OpenRay] 🌐XX-732'
+  - '[OpenRay] 🌐XX-230'
+  - 🌐سرور-19
+  - '[OpenRay] 🌐XX-752'
+  - '[OpenRay] 🌐XX-334'
+  - 🇩🇪 德国 | DEU 3
+  - 🇺🇸 United States | 🌐 | [BL]
+  - '[OpenRay] 🇮🇱IL-6'
+  - CA【高速节点：https://tt.vg/vip】17
+  - 🇦🇱 AL_29
+  - '[OpenRay] 🌐XX-45'
+  - '[OpenRay] 🌐XX-1889'
+  - 🇺🇸 美国 | USA 7
+  - '[OpenRay] 🌐XX-1047'
+  - 🇪🇸 西班牙 | ESP 2
+  - '[OpenRay] 🇺🇸US-523'
+  - 🇪🇸 西班牙 | ESP
+  - 🇪🇸 西班牙 | ESP 3
+  - ES【高速节点：https://tt.vg/vip】12
+  - '[OpenRay] 🇳🇬NG-9'
+  - '[OpenRay] 🇳🇪NE-5'
+  - '[OpenRay] 🇱🇾LY-10'
+  - '[OpenRay] 🇳🇬NG-3'
+  - '[OpenRay] 🇳🇬NG-1'
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: PROXY
+  type: select
+  proxies:
+  - AUTO-FAST
+  - '[OpenRay] 🌐XX-1098'
+  - 🇩🇪 德国 | DEU 10
+  - '[OpenRay] 🌐XX-486'
+  - '[OpenRay] 🇺🇸US-10'
+  - 🌐سرور-11
+  - '[OpenRay] 🇩🇪DE-207'
+  - 🇲🇽 Mexico, Mexico City | [BL]
+  - 🇮🇹 意大利 | ITA 5
+  - '[OpenRay] 🇺🇸US-1403'
+  - 🇲🇽 Mexico, Mexico City | [BL]-2
+rules:
+- GEOIP,CN,DIRECT
+- MATCH,PROXY
