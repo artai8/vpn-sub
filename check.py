@@ -66,6 +66,7 @@ SUPPORTED_TYPES = {"ss", "ssr", "vmess", "vless", "trojan", "hysteria", "hysteri
                    "tuic", "socks5", "http", "anytls"}
 MAX_TEST = 8000        # 单轮最多实测（mihomo delay 很快，可以比 sing-box 时代大）
 MAX_SUB = 500          # 订阅最多保留条数
+MAX_PHONE = 200        # 手机版订阅最多保留条数
 MIN_ALIVE = 30         # 自愈阈值：低于此数视为本轮异常，不覆盖旧输出
 TARGET1 = "http://www.gstatic.com/generate_204"
 TARGET2 = "https://cp.cloudflare.com/generate_204"
@@ -934,9 +935,36 @@ def main():
                               n["latency"]))
     alive_all_n = len(alive)
     kept = alive[:MAX_SUB]
+
+    # ---- 手机版候选：按用户实测反馈（47 通 / 453 不通）筛选 ----
+    # 大牌 SNI 通过率仅 1.7% → 硬排除；实测好面板的 UUID 簇通过率 40% → 最优先；
+    # 其次域名服务器、443 端口。好簇清单在仓库 phone_boost.json，用户复测后更新。
+    good_uuids = {}
+    for cand in (os.path.join(os.path.dirname(os.path.abspath(__file__)), "phone_boost.json"),
+                 "phone_boost.json"):
+        if os.path.exists(cand):
+            try:
+                good_uuids = json.load(open(cand, encoding="utf-8")).get("good_uuids", {})
+            except Exception:
+                good_uuids = {}
+            break
+
+    def _uid(p):
+        return str(p.get("uuid") or p.get("password") or "")
+
+    phone_candidates = [n for n in alive
+                        if str(n["proxy"].get("servername") or n["proxy"].get("sni")
+                               or "").lower() not in BRAND_SNIS]
+    phone_candidates.sort(key=lambda n: (0 if _uid(n["proxy"]) in good_uuids else 1,
+                                         1 if _is_ip(n["proxy"].get("server")) else 0,
+                                         0 if n["proxy"].get("port") == 443 else 1,
+                                         n["tier"], n["latency"]))
+    phone_nodes = phone_candidates[:MAX_PHONE]
+    phone_cluster_n = sum(1 for n in phone_nodes if _uid(n["proxy"]) in good_uuids)
+
     # 分配可读名字（原始备注优先，重名加后缀）
     used = set()
-    for i, node in enumerate(kept):
+    for i, node in enumerate(kept + [n for n in phone_nodes if n not in kept]):
         base = (node["name0"] or "").strip() or f"{node['proxy']['type']}-{node['proxy']['server']}"
         name, k = base, 2
         while name in used:
@@ -967,6 +995,17 @@ def main():
     clash_cfg = build_clash_config(kept)
     with open(os.path.join(args.out, "clash.yaml"), "w", encoding="utf-8") as f:
         yaml.safe_dump(clash_cfg, f, allow_unicode=True, sort_keys=False)
+    phone_links = []
+    for node in phone_nodes:
+        link = node["link"] or proxy_to_link(node["proxy"], node["display"])
+        if link:
+            phone_links.append(link)
+    with open(os.path.join(args.out, "sub_phone.txt"), "w", encoding="utf-8") as f:
+        f.write("\n".join(phone_links) + ("\n" if phone_links else ""))
+    with open(os.path.join(args.out, "sub_phone_base64.txt"), "w", encoding="utf-8") as f:
+        f.write(base64.b64encode(("\n".join(phone_links)).encode()).decode() + "\n")
+    with open(os.path.join(args.out, "clash_phone.yaml"), "w", encoding="utf-8") as f:
+        yaml.safe_dump(build_clash_config(phone_nodes), f, allow_unicode=True, sort_keys=False)
 
     # ---- 报告 ----
     tested_n = len(to_test)
@@ -987,7 +1026,7 @@ def main():
         per_t[n["tier"]][2] += 1
     tier_names = {0: "Reality", 1: "TLS+CDN传输", 2: "TLS直连", 3: "SS", 4: "UDP类(hy2/tuic)", 5: "明文/其他"}
     rep = []
-    rep.append("# VPN 节点订阅实测报告（v4：v3 + 按用户实测反馈的国内风险模式压底）\n")
+    rep.append("# VPN 节点订阅实测报告（v5：v4 + 手机版订阅按实测反馈筛选）\n")
     rep.append(f"- 测试开始：{t_start:%Y-%m-%d %H:%M:%S} CST；结束：{t_end:%Y-%m-%d %H:%M:%S} CST"
                f"（耗时 {int((t_end - t_start).total_seconds())} 秒）")
     rep.append(f"- 测试引擎：mihomo（MetaCubeX）delay 接口，双目标 {TARGET1} + {TARGET2}")
@@ -1005,8 +1044,10 @@ def main():
         rep.append(f"- 双验通过：**{v2n}**；订阅按「双验 → 分层 → 延迟」排序，保留前 {MAX_SUB} 条")
         pat_alive = sum(1 for n in alive if cn_risk_pattern(n["proxy"]))
         pat_kept = sum(1 for n in kept if cn_risk_pattern(n["proxy"]))
-        rep.append(f"- 国内高风险模式（裸IP+大牌SNI+vision，用户实测 7/7 不通）：存活 {pat_alive} 个，"
+        rep.append(f"- 国内高风险模式（裸IP+大牌SNI+vision）：存活 {pat_alive} 个，"
                    f"排序已压底，入选订阅 {pat_kept} 个（仅在其他节点不足 {MAX_SUB} 时补位）")
+        rep.append(f"- 手机版订阅（实测反馈筛选：大牌 SNI 排除、好面板簇优先）：{len(phone_nodes)} 个节点，"
+                   f"其中好面板簇 {phone_cluster_n} 个")
         if lat_list:
             rep.append(f"- 延迟（存活）：最快 {lat_list[0]} ms｜中位数 {pct(0.5)} ms｜P90 {pct(0.9)} ms｜最慢 {lat_list[-1]} ms")
     rep.append("")
