@@ -1,1 +1,35 @@
-IyB2cG4tc3ViIOKAlCDoh6rlu7rlrp7mtYvorqLpmIXvvIh2MyDono3lkIjniYjvvIkKCuS7juWkmuS4quWFrOW8gOWFjei0ueiKgueCuea6kOiBmuWQiOWAmemAie+8jOeUqCBtaWhvbW8g5YaF5qC46YCQ5Liq5YGa55yf5a6e5Luj55CG6K+35rGC5a6e5rWL77yMCuWPquS/neeVmea0u+edgOeahOiKgueCue+8jOaMieOAjOWPjOmqjCDihpIg5Zu95YaF5Y+v55So5oCn5YiG5bGCIOKGkiDlu7bov5/jgI3mjpLluo/kuqflh7rorqLpmIXjgIIKR2l0SHViIEFjdGlvbnMg5q+P5bCP5pe26Ieq5Yqo6YeN5rWL5bm25pu05paw5pys5LuT5bqT55qEIGBvdXRwdXQvYOOAggoKIyMg6K6i6ZiF5Zyw5Z2ACgotIOWIhuS6q+mTvuaOpeeJiO+8iOaYjuaWh++8ie+8mmh0dHBzOi8vcmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9hcnRhaTgvdnBuLXN1Yi9tYWluL291dHB1dC9zdWIudHh0Ci0g5YiG5Lqr6ZO+5o6l54mI77yIQmFzZTY077yJ77yaaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FydGFpOC92cG4tc3ViL21haW4vb3V0cHV0L3N1Yl9iYXNlNjQudHh0Ci0gQ2xhc2gg5a6M5pW06YWN572u77yI5YiG57uEICsg5YiG5rWB77yJ77yaaHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL2FydGFpOC92cG4tc3ViL21haW4vb3V0cHV0L2NsYXNoLnlhbWwKLSDmr4/ova7lrp7mtYvmiqXlkYrvvJpbb3V0cHV0L3JlcG9ydC5tZF0ob3V0cHV0L3JlcG9ydC5tZCkKCiMjIOiKgueCueadpea6kAoKLSBpZ2FyZWNrL3Zwbi1jb25maWdzLWZvci1ydXNzaWEg6buR5ZCN5Y2V5LiJ5Lu25aWX77yI6ZO+5o6l77yJCi0gYW5lZWswL2dvaWRhLXZwbi1jb25maWdzIOeahCAxLzMvNC81IOWPt+iBmuWQiO+8iOmTvuaOpe+8iQotIGZyZWUtcHJveHktYWlycG9ydCDnmoQgNCDkuKogQ2xhc2gg5Y6f55Sf5rqQ77yab3BlblJ1bm5lcuOAgXNuYWtlbTk4Mi9wcm94eXBvb2zjgIEKICBGbGlraWZ5L0ZyZWUtTm9kZeOAgWZyZWUtY2xhc2gtdjJyYXnvvIhZQU1M77yM5Li7K+Wkh+WcsOWdgO+8iQoKIyMg5qOA5rWL5pa55rOV77yIdjPvvIkKCjEuIOWFqOmDqOadpea6kOe7n+S4gOi9rOaIkCBDbGFzaCBwcm94eSDmnaHnm67vvIzmjIfnurnljrvph43jgIIKMi4g5oyJ5Zu95YaF5Y+v55So5oCn5YiG5bGC5o6S5bqP77yaUmVhbGl0eSA+IFRMUytDRE4g5Lyg6L6T77yId3MvZ3JwYy9oMu+8iT4gVExTIOebtOi/niA+CiAgIFNoYWRvd3NvY2tzID4gVURQIOexu++8iGh5c3RlcmlhMi90dWlj77yJPiDmmI7mlofvvJvljZXova7mnIDlpJrmtYsgODAwMCDkuKrjgIIKMy4g55SoIG1paG9tbyDlhoXmoLjnmoQgZGVsYXkg5o6l5Y+j6YCQ5Liq5a6e5rWL77ya5YWI6K+35rGC55uu5qCHIEHvvIzpgJrov4fogIXlho3or7fmsYLnm67moIcgQgogICDlpI3mtYvvvIjlj4zpqozvvInvvIzlj6rmnInnnJ/lrp7ku6PnkIbor7fmsYLmiJDlip/miY3nrpflrZjmtLvjgIIKNC4g5Lqn5Ye677yac3ViLnR4dCAvIHN1Yl9iYXNlNjQudHh077yI5YiG5Lqr6ZO+5o6l77yM5pyA5aSaIDUwMCDmnaHvvIkrIGNsYXNoLnlhbWwKICAg77yI5a6M5pW06YWN572u77yaQVVUTy1GQVNU44CBSEsvSlAvU0cvVVMg5Zyw5Yy65rGg44CBQUktUE9PTOOAgUZBTExCQUNLIOWIhue7hO+8jAogICBPcGVuQUkvQ2hhdEdQVC9DbGF1ZGUg5Z+f5ZCN6LWwIEFJIOaxoOOAgeWbveWGhSBJUCDnm7Tov57vvInjgIIKNS4g6Ieq5oSI77ya5p+Q6L2u5a2Y5rS75pWw5byC5bi45L2O77yIPDMw77yJ5pe25LiN6KaG55uW5pen6K6i6ZiF44CCCgror7TmmI7vvJrmtYvor5XlnKggR2l0SHViIOacuuaIv++8iOe+juWbve+8ieaJp+ihjO+8jOiDveWJlOmZpOWFqOeQg+W3suatu+eahOiKgueCueW5tuaMiee7j+mqjOinhOWImQrkvJjlhYjlm73lhoXmm7Tlj6/og73lj6/nlKjnmoTnsbvlnovvvJvljZXkuKroioLngrnlnKjkvaDnmoTnvZHnu5zkuIvmmK/lkKblj6/nlKjvvIzor7fku6XlrqLmiLfnq6/lrp7mtYvkuLrlh4bjgIIK5YWN6LS55YWs5YWx6IqC54K555Sx5pyq55+l56ys5LiJ5pa56L+Q6JCl77yM5LiN6KaB55So5p2l5Lyg6L6T5pWP5oSf5pWw5o2u44CCCg==
+# vpn-sub — 自建实测订阅（v3 融合版）
+
+从多个公开免费节点源聚合候选，用 mihomo 内核逐个做真实代理请求实测，
+只保留活着的节点，按「双验 → 国内可用性分层 → 延迟」排序产出订阅。
+GitHub Actions 每小时自动重测并更新本仓库的 `output/`。
+
+## 订阅地址
+
+- 分享链接版（明文）：https://raw.githubusercontent.com/artai8/vpn-sub/main/output/sub.txt
+- 分享链接版（Base64）：https://raw.githubusercontent.com/artai8/vpn-sub/main/output/sub_base64.txt
+- Clash 完整配置（分组 + 分流）：https://raw.githubusercontent.com/artai8/vpn-sub/main/output/clash.yaml
+- 每轮实测报告：[output/report.md](output/report.md)
+
+## 节点来源
+
+- igareck/vpn-configs-for-russia 黑名单三件套（链接）
+- aneek0/goida-vpn-configs 的 1/3/4/5 号聚合（链接）
+- free-proxy-airport 的 4 个 Clash 原生源：openRunner、snakem982/proxypool、
+  Flikify/Free-Node、free-clash-v2ray（YAML，主+备地址）
+
+## 检测方法（v3）
+
+1. 全部来源统一转成 Clash proxy 条目，指纹去重。
+2. 按国内可用性分层排序：Reality > TLS+CDN 传输（ws/grpc/h2）> TLS 直连 >
+   Shadowsocks > UDP 类（hysteria2/tuic）> 明文；单轮最多测 8000 个。
+3. 用 mihomo 内核的 delay 接口逐个实测：先请求目标 A，通过者再请求目标 B
+   复测（双验），只有真实代理请求成功才算存活。
+4. 产出：sub.txt / sub_base64.txt（分享链接，最多 500 条）+ clash.yaml
+   （完整配置：AUTO-FAST、HK/JP/SG/US 地区池、AI-POOL、FALLBACK 分组，
+   OpenAI/ChatGPT/Claude 域名走 AI 池、国内 IP 直连）。
+5. 自愈：某轮存活数异常低（<30）时不覆盖旧订阅。
+
+说明：测试在 GitHub 机房（美国）执行，能剔除全球已死的节点并按经验规则
+优先国内更可能可用的类型；单个节点在你的网络下是否可用，请以客户端实测为准。
+免费公共节点由未知第三方运营，不要用来传输敏感数据。
