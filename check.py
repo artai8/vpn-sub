@@ -158,6 +158,29 @@ def tier_of(proxy):
     return 5
 
 
+BRAND_SNIS = {
+    "www.apple.com", "apple.com", "www.cloudflare.com", "cloudflare.com",
+    "aws.amazon.com", "amazon.com", "www.amazon.com", "www.microsoft.com",
+    "microsoft.com", "www.google.com", "google.com", "www.yahoo.com",
+    "yahoo.com", "www.sony.co.uk", "www.bing.com", "bing.com", "fuck.rkn",
+}
+
+def _is_ip(s):
+    try:
+        import ipaddress
+        ipaddress.ip_address(str(s))
+        return True
+    except Exception:
+        return False
+
+def cn_risk_pattern(proxy):
+    """用户手机实测（2026-11-15）得出的国内高风险模式：不通的 7 个节点无一例外是
+    「裸 IP 服务器 + 大牌 SNI（apple/cloudflare/amazon 等）+ Reality vision 流」；
+    能通的 47 个里只有 1 个命中该组合。命中的节点在排序时压到最后。"""
+    sni = str(proxy.get("servername") or proxy.get("sni") or "").lower()
+    return (_is_ip(proxy.get("server")) and sni in BRAND_SNIS
+            and proxy.get("flow") == "xtls-rprx-vision")
+
 def fingerprint(proxy):
     important = {k: proxy.get(k) for k in
                  ("type", "server", "port", "uuid", "password", "cipher", "network",
@@ -902,7 +925,13 @@ def main():
             lat, v2 = res
             node["latency"], node["verified2"] = lat, v2
             alive.append(node)
-    alive.sort(key=lambda n: (0 if n["verified2"] else 1, n["tier"], n["latency"]))
+    # 排序：国内高风险模式压底 → 双验 → 分层 → 域名服务器优先 → 443 优先 → 延迟
+    # （域名/443 偏好同样来自用户实测：能通组域名占比 43% vs 池子 17%，443 占比 85% vs 64%）
+    alive.sort(key=lambda n: (1 if cn_risk_pattern(n["proxy"]) else 0,
+                              0 if n["verified2"] else 1, n["tier"],
+                              1 if _is_ip(n["proxy"].get("server")) else 0,
+                              0 if n["proxy"].get("port") == 443 else 1,
+                              n["latency"]))
     alive_all_n = len(alive)
     kept = alive[:MAX_SUB]
     # 分配可读名字（原始备注优先，重名加后缀）
@@ -958,7 +987,7 @@ def main():
         per_t[n["tier"]][2] += 1
     tier_names = {0: "Reality", 1: "TLS+CDN传输", 2: "TLS直连", 3: "SS", 4: "UDP类(hy2/tuic)", 5: "明文/其他"}
     rep = []
-    rep.append("# VPN 节点订阅实测报告（v3 融合版：多源 + mihomo 引擎 + 双验 + 分层 + Clash 分组）\n")
+    rep.append("# VPN 节点订阅实测报告（v4：v3 + 按用户实测反馈的国内风险模式压底）\n")
     rep.append(f"- 测试开始：{t_start:%Y-%m-%d %H:%M:%S} CST；结束：{t_end:%Y-%m-%d %H:%M:%S} CST"
                f"（耗时 {int((t_end - t_start).total_seconds())} 秒）")
     rep.append(f"- 测试引擎：mihomo（MetaCubeX）delay 接口，双目标 {TARGET1} + {TARGET2}")
@@ -974,6 +1003,10 @@ def main():
         rep.append(f"- 实际实测：**{tested_n}**；存活：**{alive_all_n}**；存活率："
                    f"**{(alive_all_n / tested_n * 100 if tested_n else 0):.1f}%**")
         rep.append(f"- 双验通过：**{v2n}**；订阅按「双验 → 分层 → 延迟」排序，保留前 {MAX_SUB} 条")
+        pat_alive = sum(1 for n in alive if cn_risk_pattern(n["proxy"]))
+        pat_kept = sum(1 for n in kept if cn_risk_pattern(n["proxy"]))
+        rep.append(f"- 国内高风险模式（裸IP+大牌SNI+vision，用户实测 7/7 不通）：存活 {pat_alive} 个，"
+                   f"排序已压底，入选订阅 {pat_kept} 个（仅在其他节点不足 {MAX_SUB} 时补位）")
         if lat_list:
             rep.append(f"- 延迟（存活）：最快 {lat_list[0]} ms｜中位数 {pct(0.5)} ms｜P90 {pct(0.9)} ms｜最慢 {lat_list[-1]} ms")
     rep.append("")
@@ -996,7 +1029,7 @@ def main():
                "返回有效延迟记为通过；通过者再换第二个目标复测（双验）。只有真实代理请求成功才算活。")
     rep.append("")
     rep.append("## 产出\n")
-    rep.append(f"- `output/sub.txt`：{len(links)} 条存活节点分享链接（双验 → 分层 → 延迟排序）。")
+    rep.append(f"- `output/sub.txt`：{len(links)} 条存活节点分享链接（风险模式压底 → 双验 → 分层 → 域名/443 优先 → 延迟）。")
     rep.append("- `output/sub_base64.txt`：sub.txt 的整文件 Base64 版。")
     rep.append(f"- `output/clash.yaml`：完整 Clash 配置（{len(kept)} 个节点 + AUTO/HK/JP/SG/US/AI 分组 + FALLBACK + AI 域名分流规则）。")
     with open(os.path.join(args.out, "report.md"), "w", encoding="utf-8") as f:
