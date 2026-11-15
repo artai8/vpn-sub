@@ -50,7 +50,21 @@ jobs:
           git add output/
           if git diff --cached --quiet; then
             echo "No changes."
-          else
-            git commit -m "update subscription $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            exit 0
           fi
+          git commit -m "update subscription $(date -u +%Y-%m-%dT%H:%MZ)"
+          # 推送可能因运行期间 main 被其他提交推进而被拒（non-fast-forward）：
+          # 把本轮 output/ 成果以软重置方式重放到最新 main 上重试，避免整轮结果丢失。
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "pushed on attempt $i"
+              break
+            fi
+            echo "push rejected (attempt $i) - replaying outputs onto latest main"
+            git fetch origin main
+            git reset --soft origin/main
+            git add output/
+            git commit -m "update subscription $(date -u +%Y-%m-%dT%H:%MZ)" || true
+            sleep 5
+          done
+          git log --oneline -1
