@@ -7,7 +7,7 @@ unified-delay: true
 tcp-concurrent: true
 global-client-fingerprint: chrome
 generated-by: vpn-sub-checker-v3
-generated-at: '2026-11-28T04:12:27.533315+00:00'
+generated-at: '2026-11-28T13:25:46.475197+00:00'
 proxies:
 - name: '[OpenRay] 🌐XX-1649'
   type: vless
@@ -34,6 +34,19 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   flow: xtls-rprx-vision
+- name: 美国+纽约(Prudential)
+  type: vless
+  server: 8a2e72t.nl20.h1clayd.shop
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl20.h1clayd.shop
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
 - name: '[OpenRay] 🌐XX-358'
   type: vless
   server: 8a2e72t.nl11.h1clayd.click
@@ -47,6 +60,18 @@ proxies:
     public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
     short-id: 8d0d0679f42ffd98
   flow: xtls-rprx-vision
+- name: '[OpenRay] 🌐XX-832'
+  type: vless
+  server: 76574ct.nl8.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 76574ct.nl8.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
+    short-id: 2ca59bdc5121f921
 - name: '[OpenRay] 🌐XX-805'
   type: vless
   server: 8a2e72t.nl11.h1clayd.click
@@ -61,46 +86,6 @@ proxies:
     short-id: 8d0d0679f42ffd98
   flow: xtls-rprx-vision
   network: raw
-- name: '[OpenRay] 🌐XX-584'
-  type: vless
-  server: 717252g.nl8.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: random
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-- name: '[OpenRay] 🌐XX-832'
-  type: vless
-  server: 76574ct.nl8.h1clayd.click
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 76574ct.nl8.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
-    short-id: 2ca59bdc5121f921
-- name: 🌐سرور
-  type: vless
-  server: 8a2e72t.nl20.h1clayd.shop
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl20.h1clayd.shop
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
 - name: '[OpenRay] 🌐XX-36'
   type: vless
   server: 5d0319t.nl7.h1clayd.click
@@ -113,6 +98,19 @@ proxies:
   reality-opts:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
     short-id: 361d0dd59c70516f
+- name: 🇪🇸 Spain, Madrid (Chamartín) | [BL]
+  type: vless
+  server: 38917fx.es9.h1clayd.click
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 38917fx.es9.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
+    short-id: d5501b156391e01d
+  network: xhttp
 - name: '[OpenRay] 🌐XX-99'
   type: vless
   server: 15b171g.nl7.h1clayd.click
@@ -128,6 +126,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 5b79e8a94241
+- name: '[OpenRay] 🌐XX-584'
+  type: vless
+  server: 717252g.nl8.h1clayd.click
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: random
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
 - name: '[OpenRay] 🌐XX-439'
   type: vless
   server: 7aa271t.es9.h1clayd.click
@@ -141,32 +154,20 @@ proxies:
     public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
     short-id: 42426c882c5fcd41
   flow: xtls-rprx-vision
-- name: '[OpenRay] 🌐XX-132'
-  type: vless
-  server: 38917fx.es9.h1clayd.click
+- name: '[OpenRay] 🌐XX-59'
+  type: vmess
+  server: guanwang.awsno.com
   port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
   udp: true
-  servername: 38917fx.es9.h1clayd.click
-  client-fingerprint: ios
   tls: true
-  reality-opts:
-    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
-    short-id: d5501b156391e01d
-  network: xhttp
-- name: '[OpenRay] 🌐XX-184'
-  type: vless
-  server: 4935e4t.de25.h1clayd.click
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 4935e4t.de25.h1clayd.click
-  client-fingerprint: qq
-  tls: true
-  reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  flow: xtls-rprx-vision
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
 - name: '[OpenRay] 🌐XX-1402'
   type: vmess
   server: guanwang.awsno.com
@@ -197,51 +198,21 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: '[OpenRay] 🌐XX-59'
-  type: vmess
-  server: guanwang.awsno.com
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: '[OpenRay] 🌐XX-106'
-  type: vmess
-  server: nomino.11hi8itbaf.workers.dev
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: nomino.11hi8itbaf.workers.dev
-  network: ws
-  ws-opts:
-    path: /guanwang.awsno.com/hls/cctv5phd.m3u8
-- name: '[OpenRay] 🇸🇪SE-4'
+- name: '[OpenRay] 🇺🇸US-268'
   type: vless
-  server: 164.37.224.245
+  server: 163.245.42.56
   port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
   udp: true
-  servername: 961ec0g.nl13.h1clayd.click
-  client-fingerprint: edge
+  servername: mother-earth.fyi
+  client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
-    short-id: 6d289ff0f47c0aac
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 7d5abcd7d8a1
-- name: '[OpenRay] 🇺🇸US-1090'
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇬🇧GB-257'
   type: vless
-  server: 9.247.23.209
+  server: 104.164.82.74
   port: 443
   uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
   udp: true
@@ -251,39 +222,9 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   flow: xtls-rprx-vision
-- name: '[OpenRay] 🇸🇪SE-31'
+- name: '[OpenRay] 🇺🇸US-1090'
   type: vless
-  server: 164.37.224.238
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 961ec0g.nl13.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
-    short-id: 6d289ff0f47c0aac
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 7d5abcd7d8a1
-- name: '[OpenRay] 🇱🇹LT-17'
-  type: vless
-  server: 195.206.235.74
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 961ec0g.nl13.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
-    short-id: 6d289ff0f47c0aac
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 7d5abcd7d8a1
-- name: '[OpenRay] 🇬🇧GB-257'
-  type: vless
-  server: 104.164.82.74
+  server: 9.247.23.209
   port: 443
   uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
   udp: true
@@ -305,45 +246,6 @@ proxies:
   reality-opts:
     public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
     short-id: 8956c57cb4c4f8d2
-- name: '[OpenRay] 🇸🇪SE-9'
-  type: vless
-  server: 164.37.224.230
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 961ec0g.nl13.h1clayd.click
-  client-fingerprint: edge
-  tls: true
-  reality-opts:
-    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
-    short-id: 6d289ff0f47c0aac
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 7d5abcd7d8a1
-- name: '[OpenRay] 🇺🇸US-268'
-  type: vless
-  server: 163.245.42.56
-  port: 443
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  udp: true
-  servername: mother-earth.fyi
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇧🇬BG-11'
-  type: vless
-  server: 193.148.253.75
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: f0d7aft.nl13.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
-    short-id: 8956c57cb4c4f8d2
 - name: '[OpenRay] 🇸🇰SK-32'
   type: vless
   server: 196.245.153.156
@@ -359,300 +261,48 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 7d5abcd7d8a1
-- name: '[OpenRay] 🇸🇰SK-10'
+- name: '[OpenRay] 🇧🇬BG-11'
   type: vless
-  server: 196.245.153.156
+  server: 193.148.253.75
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: f0d7aft.nl17.h1clayd.click
+  servername: f0d7aft.nl13.h1clayd.click
   client-fingerprint: firefox
   tls: true
   reality-opts:
     public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
     short-id: 8956c57cb4c4f8d2
-- name: '[OpenRay] 🇺🇸US-1568'
+- name: '[OpenRay] 🇸🇪SE-31'
   type: vless
-  server: 185.255.115.96
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 4935e4t.de25.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  flow: xtls-rprx-vision
-  network: raw
-- name: '[OpenRay] 🇱🇹LT-53'
-  type: vless
-  server: 195.206.235.119
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇺🇸US-800'
-  type: vless
-  server: 48.103.231.76
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇧🇷BR-96'
-  type: vless
-  server: 201.8.64.253
+  server: 164.37.224.238
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-- name: '[OpenRay] 🇱🇹LT-20'
-  type: vless
-  server: 195.206.235.215
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇺🇸US-720'
-  type: vless
-  server: 13.141.37.245
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 717252g.nl8.h1clayd.click
+  servername: 961ec0g.nl13.h1clayd.click
   client-fingerprint: chrome
   tls: true
   reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
+    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
+    short-id: 6d289ff0f47c0aac
   network: grpc
   grpc-opts:
-    grpc-service-name: 204adda7e3da
-- name: '[OpenRay] 🇮🇱IL-3'
+    grpc-service-name: 7d5abcd7d8a1
+- name: '[OpenRay] 🇸🇪SE-4'
   type: vless
-  server: 79.182.39.131
+  server: 164.37.224.245
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-- name: '[OpenRay] 🇬🇧GB-183'
-  type: vless
-  server: 136.148.208.221
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl20.h1clayd.shop
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇺🇸US-1125'
-  type: vless
-  server: 185.255.115.103
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 4935e4t.de25.h1clayd.click
+  servername: 961ec0g.nl13.h1clayd.click
   client-fingerprint: edge
   tls: true
   reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇺🇸US-305'
-  type: vless
-  server: 162.35.101.177
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 0592efg.us8.h1clayd.click
-  client-fingerprint: edge
-  tls: true
-  reality-opts:
-    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-    short-id: bd8f712209a9c283
+    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
+    short-id: 6d289ff0f47c0aac
   network: grpc
   grpc-opts:
-    grpc-service-name: 99f2107b03f8
-- type: vless
-  name: 🇮🇱IL以色列丨yoyapai.com
-  server: 136.148.208.221
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  flow: xtls-rprx-vision
-  udp: true
-  tls: true
-  servername: 8a2e72t.nl20.h1clayd.shop
-  sni: 8a2e72t.nl20.h1clayd.shop
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-- name: NE【高速节点：https://vip.a3f.xyz】21
-  type: vless
-  server: 196.196.148.76
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl20.h1clayd.shop
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇺🇸US-13'
-  type: vless
-  server: 132.243.67.224
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-- name: '[OpenRay] 🇱🇹LT-33'
-  type: vless
-  server: 195.206.235.34
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇸🇰SK-12'
-  type: vless
-  server: 196.245.153.92
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-- name: '[OpenRay] 🇺🇸US-421'
-  type: vless
-  server: 13.141.37.243
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-- name: '[OpenRay] 🇺🇸US-494'
-  type: vless
-  server: 13.141.36.10
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: '[OpenRay] 🇱🇹LT-35'
-  type: vless
-  server: 195.206.235.232
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-- name: '[OpenRay] 🇧🇷BR-64'
-  type: vless
-  server: 179.254.115.111
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 0592efg.us8.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-    short-id: bd8f712209a9c283
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 99f2107b03f8
-- name: '[OpenRay] 🇩🇪DE-116'
-  type: vless
-  server: 45.86.158.235
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
+    grpc-service-name: 7d5abcd7d8a1
 - name: '[OpenRay] 🇮🇱IL-11'
   type: vless
   server: 79.182.70.220
@@ -668,44 +318,33 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 5b79e8a94241
-- name: '[OpenRay] 🇫🇮FI-37'
+- name: '[OpenRay] 🇮🇱IL-2'
   type: vless
-  server: 185.242.247.252
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl20.h1clayd.shop
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇩🇪DE-173'
-  type: vless
-  server: 91.238.123.9
+  server: 79.182.70.232
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: 04535dt.us8.h1clayd.click
-  client-fingerprint: chrome
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-    short-id: ba2a3dce62b99092
-- name: '[OpenRay] 🇺🇸US-1017'
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+- name: '[OpenRay] 🇸🇪SE-9'
   type: vless
-  server: 185.255.115.181
+  server: 164.37.224.230
   port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: 4935e4t.de25.h1clayd.click
-  client-fingerprint: qq
+  servername: 961ec0g.nl13.h1clayd.click
+  client-fingerprint: edge
   tls: true
   reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  flow: xtls-rprx-vision
+    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
+    short-id: 6d289ff0f47c0aac
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 7d5abcd7d8a1
 - name: '[OpenRay] 🇪🇸ES-7'
   type: vless
   server: 196.245.52.178
@@ -721,226 +360,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 5b79e8a94241
-- name: '[OpenRay] 🇺🇸US-1113'
+- name: '[OpenRay] 🇸🇰SK-10'
   type: vless
-  server: 132.243.163.174
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇩🇪DE-38'
-  type: vless
-  server: 89.169.54.244
+  server: 196.245.153.156
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: 15b171g.nl7.h1clayd.click
+  servername: f0d7aft.nl17.h1clayd.click
   client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: '[OpenRay] 🇧🇷BR-13'
-  type: vless
-  server: 179.254.115.111
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 04535dt.us8.h1clayd.click
-  client-fingerprint: edge
-  tls: true
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-    short-id: ba2a3dce62b99092
-- name: '[OpenRay] 🇸🇪SE-1'
-  type: vless
-  server: 164.37.224.51
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: '[OpenRay] 🇩🇪DE-9'
-  type: vless
-  server: 91.238.123.9
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 04535dt.us8.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-    short-id: ba2a3dce62b99092
-  network: raw
-- name: '[OpenRay] 🇮🇱IL-7'
-  type: vless
-  server: 79.182.70.245
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇸🇪SE-47'
-  type: vless
-  server: 164.37.224.51
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-- name: '[OpenRay] 🇺🇸US-51'
-  type: vless
-  server: 153.52.85.198
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇺🇸US-626'
-  type: vless
-  server: 132.243.66.159
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 04535dt.us8.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
-    short-id: ba2a3dce62b99092
-- name: '[OpenRay] 🇱🇹LT-70'
-  type: vless
-  server: 195.206.235.232
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: '[OpenRay] 🇧🇷BR-104'
-  type: vless
-  server: 201.8.64.254
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: '[OpenRay] 🇱🇹LT-29'
-  type: vless
-  server: 195.206.235.139
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-- name: '[OpenRay] 🇸🇰SK-8'
-  type: vless
-  server: 196.245.153.104
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-- name: '[OpenRay] 🇪🇸ES-6'
-  type: vless
-  server: 196.245.52.187
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 0592efg.us8.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-    short-id: bd8f712209a9c283
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 99f2107b03f8
-- name: '[OpenRay] 🇺🇸US-380'
-  type: vless
-  server: 13.141.37.2
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 717252g.nl8.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
-    short-id: d3bd772514c87d28
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 204adda7e3da
-- name: '[OpenRay] 🇮🇱IL-16'
-  type: vless
-  server: 79.182.39.135
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
+    public-key: kkCGiCQCKnkozJR1KKCRNtmdBECmThCgI9VSv7iDcWI
+    short-id: 8956c57cb4c4f8d2
 - name: '[OpenRay] 🇱🇹LT-19'
   type: vless
   server: 195.206.235.110
@@ -956,33 +387,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 204adda7e3da
-- name: '[OpenRay] 🇺🇸US-12'
+- name: '[OpenRay] 🇸🇰SK-7'
   type: vless
-  server: 13.141.51.2
+  server: 196.245.153.111
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: 0592efg.us8.h1clayd.click
-  client-fingerprint: firefox
+  servername: 76574ct.nl8.h1clayd.click
+  client-fingerprint: chrome
   tls: true
   reality-opts:
-    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
-    short-id: bd8f712209a9c283
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 99f2107b03f8
-- name: '[OpenRay] 🇮🇱IL-2'
-  type: vless
-  server: 79.182.70.232
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
+    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
+    short-id: 2ca59bdc5121f921
 - name: '[OpenRay] 🇺🇸US-296'
   type: vless
   server: 13.143.239.6
@@ -998,20 +414,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 204adda7e3da
-- name: 🇳🇱 荷兰 | NLD 2
-  server: 196.196.148.76
-  port: 443
-  type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  servername: 8a2e72t.nl20.h1clayd.shop
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
 - name: '[OpenRay] 🇧🇷BR-5'
   type: vless
   server: 201.8.64.254
@@ -1024,106 +426,49 @@ proxies:
   reality-opts:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
     short-id: 361d0dd59c70516f
-- name: '[OpenRay] 🇧🇷BR-58'
+- name: '[OpenRay] 🇺🇸US-1017'
   type: vless
-  server: 179.254.115.118
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 8a2e72t.nl11.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
-    short-id: 8d0d0679f42ffd98
-  flow: xtls-rprx-vision
-- type: vless
-  name: 🇳🇱NL荷兰丨yoyapai.com (2)
-  server: 196.245.52.183
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  servername: e60833x.nl7.h1clayd.click
-  sni: e60833x.nl7.h1clayd.click
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: jIRVNEf9SpuWP2nJrAbHGGIUnfzOmwZZlrNGw-Y-O2Q
-    short-id: 2d2598d60447a967
-  network: xhttp
-  xhttp-opts:
-    path: /d20896a4ce30
-    mode: auto
-- name: '[OpenRay] 🇺🇸US-779'
-  type: vless
-  server: 185.255.115.118
+  server: 185.255.115.181
   port: 443
   uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   udp: true
   servername: 4935e4t.de25.h1clayd.click
-  client-fingerprint: chrome
+  client-fingerprint: qq
   tls: true
   reality-opts:
     public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
     short-id: 6976d670818644cc
   flow: xtls-rprx-vision
-- name: '[OpenRay] 🇸🇨SC-15'
+- name: '[OpenRay] 🇱🇹LT-17'
   type: vless
-  server: 196.242.10.38
+  server: 195.206.235.74
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: 15b171g.nl7.h1clayd.click
+  servername: 961ec0g.nl13.h1clayd.click
   client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
+    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
+    short-id: 6d289ff0f47c0aac
   network: grpc
   grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: '[OpenRay] 🇺🇸US-971'
+    grpc-service-name: 7d5abcd7d8a1
+- name: '[OpenRay] 🇮🇱IL-3'
   type: vless
-  server: 194.238.79.86
+  server: 79.182.39.131
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: '[OpenRay] 🇺🇸US-989'
-  type: vless
-  server: 132.243.163.125
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 4935e4t.de25.h1clayd.click
+  servername: 717252g.nl8.h1clayd.click
   client-fingerprint: chrome
   tls: true
   reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  flow: xtls-rprx-vision
-- name: RO【高速节点：https://vip.a3f.xyz】24
-  type: vless
-  server: 13.141.36.63
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 4935e4t.de25.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  flow: xtls-rprx-vision
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
 - name: '[OpenRay] 🇺🇸US-355'
   type: vless
   server: 153.56.230.6
@@ -1139,61 +484,9 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 99f2107b03f8
-- name: '[OpenRay] 🇸🇰SK-22'
+- name: '[OpenRay] 🇧🇷BR-64'
   type: vless
-  server: 196.245.153.104
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: ios
-  tls: true
-  reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
-- name: NE【高速节点：https://vip.a3f.xyz】23
-  type: vless
-  server: 196.196.148.177
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 4935e4t.de25.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  flow: xtls-rprx-vision
-- name: NE【高速节点：https://vip.a3f.xyz】25
-  type: vless
-  server: 196.196.148.85
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-- name: '[OpenRay] 🇺🇸US-642'
-  type: vless
-  server: 13.141.36.10
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-    short-id: 361d0dd59c70516f
-- name: '[OpenRay] 🇺🇸US-1508'
-  type: vless
-  server: 9.247.54.226
+  server: 179.254.115.111
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
@@ -1206,9 +499,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 99f2107b03f8
-- name: '[OpenRay] 🇪🇸ES-18'
+- name: '[OpenRay] 🇸🇪SE-47'
   type: vless
-  server: 196.245.52.183
+  server: 164.37.224.51
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+- name: '[OpenRay] 🇱🇹LT-70'
+  type: vless
+  server: 195.206.235.232
   port: 443
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
@@ -1248,97 +553,73 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 204adda7e3da
-- name: 西班牙+V2CROSS.COM
-  type: vless
-  server: 196.196.149.80
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 7aa271t.es1.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
-    short-id: 42426c882c5fcd41
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇸🇰SK-7'
-  type: vless
-  server: 196.245.153.111
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  servername: 76574ct.nl8.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: 9zW5lTDbs9svY-lzlPp-pq0j2Sr6g031SY0E-3xSHDc
-    short-id: 2ca59bdc5121f921
-- name: NG【高速节点：https://vip.a3f.xyz】28
-  type: vless
-  server: 196.196.149.81
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 7aa271t.es1.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
-    short-id: 42426c882c5fcd41
-  flow: xtls-rprx-vision
-- name: 🇪🇸 西班牙 | ESP 2
-  server: 196.196.149.80
-  port: 443
-  type: vless
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  tls: true
-  flow: xtls-rprx-vision
-  reality-opts:
-    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
-    short-id: 42426c882c5fcd41
-  servername: 7aa271t.es1.h1clayd.click
-  client-fingerprint: firefox
-  network: tcp
-  udp: true
-- name: '[OpenRay] 🇳🇬NG-2'
-  type: vless
-  server: 196.196.149.80
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 38917fx.es1.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
-    short-id: d5501b156391e01d
-  network: xhttp
-- name: '[OpenRay] 🇳🇬NG-7'
-  type: vless
-  server: 196.196.149.81
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 38917fx.es1.h1clayd.click
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
-    short-id: d5501b156391e01d
-  network: xhttp
-- name: '[OpenRay] 🇱🇾LY-16'
+- name: LY【高速节点：https://vip.a3f.xyz】14
   type: vless
   server: 196.199.122.2
   port: 443
   uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   udp: true
-  servername: 38917fx.es1.h1clayd.click
+  servername: 7aa271t.es1.h1clayd.click
   client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
-    short-id: d5501b156391e01d
-  network: xhttp
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇺🇸US-626'
+  type: vless
+  server: 132.243.66.159
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 04535dt.us8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+    short-id: ba2a3dce62b99092
+- name: '[OpenRay] 🇧🇷BR-13'
+  type: vless
+  server: 179.254.115.111
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 04535dt.us8.h1clayd.click
+  client-fingerprint: edge
+  tls: true
+  reality-opts:
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+    short-id: ba2a3dce62b99092
+- name: '[OpenRay] 🇺🇸US-13'
+  type: vless
+  server: 132.243.67.224
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- name: '[OpenRay] 🇪🇸ES-6'
+  type: vless
+  server: 196.245.52.187
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 0592efg.us8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 99f2107b03f8
 - name: '[OpenRay] 🇸🇰SK-15'
   type: vless
   server: 196.245.153.114
@@ -1352,18 +633,132 @@ proxies:
     public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
     short-id: d5501b156391e01d
   network: xhttp
-- name: '[OpenRay] 🇺🇸US-77'
+- name: NE【高速节点：https://vip.a3f.xyz】21
   type: vless
-  server: 13.143.239.253
+  server: 196.196.148.76
   port: 443
   uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   udp: true
-  servername: 8a2e72t.nl11.h1clayd.click
+  servername: 8a2e72t.nl20.h1clayd.shop
   client-fingerprint: firefox
   tls: true
   reality-opts:
     public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
     short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇺🇸US-720'
+  type: vless
+  server: 13.141.37.245
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- name: '[OpenRay] 🇮🇱IL-16'
+  type: vless
+  server: 79.182.39.135
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: '[OpenRay] 🇧🇷BR-96'
+  type: vless
+  server: 201.8.64.253
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- type: vless
+  name: 🇮🇱IL以色列丨yoyapai.com
+  server: 136.148.208.221
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  flow: xtls-rprx-vision
+  udp: true
+  tls: true
+  servername: 8a2e72t.nl20.h1clayd.shop
+  sni: 8a2e72t.nl20.h1clayd.shop
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+- name: '[OpenRay] 🇱🇾LY-16'
+  type: vless
+  server: 196.199.122.2
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 38917fx.es1.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
+    short-id: d5501b156391e01d
+  network: xhttp
+- name: '[OpenRay] 🇺🇸US-1125'
+  type: vless
+  server: 185.255.115.103
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 4935e4t.de25.h1clayd.click
+  client-fingerprint: edge
+  tls: true
+  reality-opts:
+    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
+    short-id: 6976d670818644cc
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇺🇸US-305'
+  type: vless
+  server: 162.35.101.177
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 0592efg.us8.h1clayd.click
+  client-fingerprint: edge
+  tls: true
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 99f2107b03f8
+- name: '[OpenRay] 🇸🇰SK-29'
+  type: vless
+  server: 196.245.153.114
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 7aa271t.es9.h1clayd.click
+  client-fingerprint: random
+  tls: true
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
   flow: xtls-rprx-vision
 - name: '[OpenRay] 🇺🇸US-661'
   type: vless
@@ -1378,20 +773,273 @@ proxies:
     public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
     short-id: d5501b156391e01d
   network: xhttp
-- name: 🇪🇸 西班牙 | ESP
-  server: 196.196.148.90
-  port: 443
+- name: '[OpenRay] 🇱🇹LT-20'
   type: vless
+  server: 195.206.235.215
+  port: 443
   uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: firefox
   tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
   flow: xtls-rprx-vision
+- name: '[OpenRay] 🇸🇪SE-1'
+  type: vless
+  server: 164.37.224.51
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: '[OpenRay] 🇩🇪DE-38'
+  type: vless
+  server: 89.169.54.244
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: NE【高速节点：https://vip.a3f.xyz】25
+  type: vless
+  server: 196.196.148.85
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+- name: '[OpenRay] 🇸🇰SK-8'
+  type: vless
+  server: 196.245.153.104
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+- name: '[OpenRay] 🇳🇬NG-4'
+  type: vless
+  server: 196.196.149.80
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
   reality-opts:
     public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
     short-id: 42426c882c5fcd41
-  servername: 7aa271t.es9.h1clayd.click
-  client-fingerprint: firefox
-  network: tcp
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇱🇹LT-33'
+  type: vless
+  server: 195.206.235.34
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇳🇬NG-2'
+  type: vless
+  server: 196.196.149.80
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 38917fx.es1.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: 4mgkA2kT_Im0rkGi-fVSUU5CyF5xvMVcjA6MXBSEDAA
+    short-id: d5501b156391e01d
+  network: xhttp
+- name: '[OpenRay] 🇬🇧GB-183'
+  type: vless
+  server: 136.148.208.221
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl20.h1clayd.shop
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇸🇰SK-22'
+  type: vless
+  server: 196.245.153.104
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: ios
+  tls: true
+  reality-opts:
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: '[OpenRay] 🇺🇸US-1113'
+  type: vless
+  server: 132.243.163.174
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇮🇱IL-7'
+  type: vless
+  server: 79.182.70.245
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇱🇹LT-35'
+  type: vless
+  server: 195.206.235.232
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+- name: '[OpenRay] 🇺🇸US-77'
+  type: vless
+  server: 13.143.239.253
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇺🇸US-51'
+  type: vless
+  server: 153.52.85.198
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: NG【高速节点：https://vip.a3f.xyz】28
+  type: vless
+  server: 196.196.149.81
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇧🇷BR-58'
+  type: vless
+  server: 179.254.115.118
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇺🇸US-380'
+  type: vless
+  server: 13.141.37.2
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- name: '[OpenRay] 🇩🇪DE-9'
+  type: vless
+  server: 91.238.123.9
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 04535dt.us8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+    short-id: ba2a3dce62b99092
+  network: raw
+- name: '[OpenRay] 🇺🇸US-12'
+  type: vless
+  server: 13.141.51.2
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 0592efg.us8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: cO3wYHISTeorXcM8ffaDCDdqZ-olBQL-GyZqb-W7rTk
+    short-id: bd8f712209a9c283
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 99f2107b03f8
 - name: NE【高速节点：https://vip.a3f.xyz】32
   type: vless
   server: 196.196.148.90
@@ -1405,48 +1053,36 @@ proxies:
     public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
     short-id: 42426c882c5fcd41
   flow: xtls-rprx-vision
-- name: '[OpenRay] 🇸🇰SK-29'
+- name: '[OpenRay] 🇺🇸US-243'
   type: vless
-  server: 196.245.153.114
+  server: 13.141.51.2
   port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: 7aa271t.es9.h1clayd.click
-  client-fingerprint: random
-  tls: true
-  reality-opts:
-    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
-    short-id: 42426c882c5fcd41
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇺🇸US-26'
-  type: vless
-  server: 132.243.66.153
-  port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
-  udp: true
-  servername: 4935e4t.de25.h1clayd.click
+  servername: 04535dt.us8.h1clayd.click
   client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇱🇹LT-24'
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+    short-id: ba2a3dce62b99092
+- name: '[OpenRay] 🇧🇷BR-104'
   type: vless
-  server: 195.206.235.202
+  server: 201.8.64.254
   port: 443
-  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
-  servername: 4935e4t.de25.h1clayd.click
-  client-fingerprint: edge
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
-    short-id: 6976d670818644cc
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🇺🇸US-362'
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: '[OpenRay] 🇺🇸US-1568'
   type: vless
-  server: 153.56.229.207
+  server: 185.255.115.96
   port: 443
   uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
   udp: true
@@ -1457,39 +1093,211 @@ proxies:
     public-key: MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw
     short-id: 6976d670818644cc
   flow: xtls-rprx-vision
-- name: US【高速节点：https://vip.a3f.xyz】35
-  type: vmess
-  server: 188.114.99.137
+  network: raw
+- name: '[OpenRay] 🇺🇸US-494'
+  type: vless
+  server: 13.141.36.10
   port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: '[OpenRay] 🇺🇸US-971'
+  type: vless
+  server: 194.238.79.86
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: '[OpenRay] 🇱🇹LT-53'
+  type: vless
+  server: 195.206.235.119
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇩🇪DE-173'
+  type: vless
+  server: 91.238.123.9
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 04535dt.us8.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: UoS8qZ74hP_ECcncCz55lzvlcVss3R7VA0WYZE0YQCY
+    short-id: ba2a3dce62b99092
+- name: '[OpenRay] 🇸🇨SC-15'
+  type: vless
+  server: 196.242.10.38
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: '[OpenRay] 🇫🇮FI-37'
+  type: vless
+  server: 185.242.247.252
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl20.h1clayd.shop
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- type: vless
+  name: 🇳🇱NL荷兰丨yoyapai.com (2)
+  server: 196.245.52.183
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   udp: true
   tls: true
-  servername: guanwang.awsno.com
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
+  servername: e60833x.nl7.h1clayd.click
+  sni: e60833x.nl7.h1clayd.click
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: jIRVNEf9SpuWP2nJrAbHGGIUnfzOmwZZlrNGw-Y-O2Q
+    short-id: 2d2598d60447a967
+  network: xhttp
+  xhttp-opts:
+    path: /d20896a4ce30
+    mode: auto
+- name: '[OpenRay] 🇺🇸US-642'
+  type: vless
+  server: 13.141.36.10
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+- name: '[OpenRay] 🇺🇸US-800'
+  type: vless
+  server: 48.103.231.76
+  port: 443
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  udp: true
+  servername: 8a2e72t.nl11.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: VZS639V1i-35g7VXb9EoTYL-Srm7858sxcvFAunncmA
+    short-id: 8d0d0679f42ffd98
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🇱🇹LT-29'
+  type: vless
+  server: 195.206.235.139
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- name: '[OpenRay] 🇩🇪DE-116'
+  type: vless
+  server: 45.86.158.235
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- name: '[OpenRay] 🇪🇸ES-18'
+  type: vless
+  server: 196.245.52.183
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 15b171g.nl7.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
+    short-id: 50a749f0eccb628c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 5b79e8a94241
+- name: '[OpenRay] 🇺🇸US-421'
+  type: vless
+  server: 13.141.37.243
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
+- name: '[OpenRay] 🇸🇰SK-12'
+  type: vless
+  server: 196.245.153.92
+  port: 443
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  udp: true
+  servername: 717252g.nl8.h1clayd.click
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: PD8Jdlg3xB9QY--jwQjp8PFPzCS8-Oryw6-HWBcHMFU
+    short-id: d3bd772514c87d28
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 204adda7e3da
 - name: CA【高速节点：https://vip.a3f.xyz】37
   type: vmess
   server: 172.64.145.93
-  port: 443
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  servername: guanwang.awsno.com
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-    headers:
-      Host: guanwang.awsno.com
-- name: CA【高速节点：https://vip.a3f.xyz】36
-  type: vmess
-  server: 172.67.190.164
   port: 443
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
@@ -1517,21 +1325,36 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: '[OpenRay] 🌐XX-2021'
+- name: CA【高速节点：https://vip.a3f.xyz】36
   type: vmess
-  server: 172.67.137.158
+  server: 172.67.190.164
   port: 443
   uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
   alterId: 0
   cipher: auto
   udp: true
   tls: true
-  servername: nomino.11hi8itbaf.workers.dev
+  servername: guanwang.awsno.com
   network: ws
   ws-opts:
-    path: /guanwang.awsno.com/hls/cctv5phd.m3u8
+    path: /hls/cctv5phd.m3u8
     headers:
-      Host: nomino.11hi8itbaf.workers.dev
+      Host: guanwang.awsno.com
+- name: US【高速节点：https://vip.a3f.xyz】35
+  type: vmess
+  server: 188.114.99.137
+  port: 443
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: guanwang.awsno.com
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
 - name: '[OpenRay] 🌐XX-328'
   type: vless
   server: pl.galacticworld.online
@@ -1544,18 +1367,60 @@ proxies:
   reality-opts:
     public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
   flow: xtls-rprx-vision
-- name: 🇬🇧
-  type: vless
-  server: eu121.cdn77.icu
+- name: 🇯🇵 日本 | JPN 2
+  server: jp2game.xyy123.win
   port: 443
-  uuid: 327487f5-8665-48df-9e76-f1bee6d16557
+  type: vless
+  uuid: 330a570e-c0ba-4a9d-8e37-d20540cc8eaa
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: KBPuCiAKJQQtlsodm5MIBFfYf-TGsrjCK5GGJzJJli4
+    short-id: 6a3c0a718181
+  servername: stg.nvbugspro.nvidia.com
+  client-fingerprint: chrome
+  network: tcp
   udp: true
-  servername: 127.0.0.1
+- name: 🇯🇵 日本 | JPN 3
+  server: jp2music.xyy123.win
+  port: 443
+  type: vless
+  uuid: 330a570e-c0ba-4a9d-8e37-d20540cc8eaa
+  tls: true
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: KBPuCiAKJQQtlsodm5MIBFfYf-TGsrjCK5GGJzJJli4
+    short-id: 6a3c0a718181
+  servername: stg.nvbugspro.nvidia.com
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: '[OpenRay] 🌐XX-2039'
+  type: vless
+  server: 6bf329t.nl18.h1clayd.click
+  port: 443
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  udp: true
+  servername: 6bf329t.nl18.h1clayd.click
   client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
-    short-id: 1ed136481e0ede74
+    public-key: p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM
+    short-id: 92aee92130b46fe2
+  flow: xtls-rprx-vision
+- name: '[OpenRay] 🌐XX-230'
+  type: vless
+  server: lists.soloramtin.cyou
+  port: 443
+  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
+  udp: true
+  servername: www.foxsports.com
+  client-fingerprint: random
+  tls: true
+  reality-opts:
+    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
+    short-id: 91af08b1ce1f
+  flow: xtls-rprx-vision
 - name: '[OpenRay] 🌐XX-1027'
   type: vless
   server: 71b840t.de7.h1clayd.click
@@ -1569,31 +1434,18 @@ proxies:
     public-key: 3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE
     short-id: e572b6579ea525d4
   network: raw
-- name: '[OpenRay] 🌐XX-139'
+- name: '[OpenRay] 🌐XX-1355'
   type: vless
-  server: ww3.levikogjgfdd.ir
+  server: cloud-de01.dynv6.net
   port: 443
-  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
   udp: true
-  servername: passport.yandex.ru
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
-    short-id: e6
-  flow: xtls-rprx-vision
-- name: 🇫🇮 Finland, Helsinki | [BL]
-  type: vless
-  server: lesson6.schoolpizorbz.xyz
-  port: 443
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  udp: true
-  servername: lesson6.schoolpizorbz.xyz
+  servername: tradingview.com
   client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: kEtGermhVoTO4QWTy88C6Y52xDqOyR9f3bxR2oWqUA8
-    short-id: 32772060abd44e31
+    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
+    short-id: 8f3c6e2a1b5d4f09
   flow: xtls-rprx-vision
 - name: '[OpenRay] 🌐XX-1015'
   type: vless
@@ -1620,648 +1472,7 @@ proxies:
     public-key: p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM
     short-id: 92aee92130b46fe2
   flow: xtls-rprx-vision
-- name: '[OpenRay] 🌐XX-230'
-  type: vless
-  server: lists.soloramtin.cyou
-  port: 443
-  uuid: 67eb6b17-7797-4ded-bf52-423c4c5f6cbd
-  udp: true
-  servername: www.foxsports.com
-  client-fingerprint: random
-  tls: true
-  reality-opts:
-    public-key: G7bpUPFSW28-oE6ff8qZac1_apU6PiJ-GHmi7tAPDSY
-    short-id: 91af08b1ce1f
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🌐XX-2039'
-  type: vless
-  server: 6bf329t.nl18.h1clayd.click
-  port: 443
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  udp: true
-  servername: 6bf329t.nl18.h1clayd.click
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: p35RUaaaItuoyNiCrLpGeStBUpEJMSiZ2AajdfhhmiM
-    short-id: 92aee92130b46fe2
-  flow: xtls-rprx-vision
-- name: '[OpenRay] 🌐XX-1355'
-  type: vless
-  server: cloud-de01.dynv6.net
-  port: 443
-  uuid: 1d1eda2e-0bd7-4478-877b-1c5425c6c4dd
-  udp: true
-  servername: tradingview.com
-  client-fingerprint: firefox
-  tls: true
-  reality-opts:
-    public-key: yr_opKG6DGTppNDXkk-DhGSYJZXbb9o-caexk2FZO38
-    short-id: 8f3c6e2a1b5d4f09
-  flow: xtls-rprx-vision
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-44
-  type: vless
-  server: 14f7f5f0.mrbl69black.pages.dev
-  port: 443
-  uuid: 0d5a2112-789f-4755-88e6-61a1a8f8067b
-  udp: true
-  servername: 14F7F5f0.mRBL69BlaCK.paGES.DeV
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /I0IHonn0TGa2xaOO?ed=2560
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-45
-  type: vless
-  server: spacex.com
-  port: 443
-  uuid: cced2d3b-9840-4579-a6b3-5de365f3bf50
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: wallweb6.pages.dev
-- name: 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-14
-  type: vless
-  server: help1.digikala-aparat-zula.com
-  port: 443
-  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
-  udp: true
-  servername: wallweb-av6.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-av6.pages.dev
-- name: 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-15
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
-  udp: true
-  servername: wallweb-av6.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-av6.pages.dev
-- name: 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-16
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  servername: vp7.1145678.xyz
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /images
-    headers:
-      Host: vp7.1145678.xyz
-- name: 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-17
-  type: vless
-  server: ip13.shabkhosh.sbs
-  port: 443
-  uuid: 49e72868-abfd-4557-b474-6777853a9c8d
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: wallwebb33p08.wallwebvycxcl.workers.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-46
-  type: vless
-  server: epam.com
-  port: 443
-  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: wallweb-av6.pages.dev
-- name: 🌐 Anycast-IP | 🇬🇧 🇷🇺 🇸🇬 | [BL]
-  type: vless
-  server: help1.digikala-aparat-zula.com
-  port: 443
-  uuid: 20e565e1-3858-40bf-94e8-4ec9624fc985
-  udp: true
-  servername: wallweb8.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb8.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-47
-  type: vless
-  server: cfnode-11ivy8.pages.dev
-  port: 443
-  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
-  udp: true
-  tls: true
-  network: ws
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-48
-  type: vless
-  server: epam.com
-  port: 443
-  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
-  udp: true
-  servername: wallweb-av6.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-av6.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]
-  type: vless
-  server: epam.com
-  port: 443
-  uuid: cced2d3b-9840-4579-a6b3-5de365f3bf50
-  udp: true
-  servername: wallweb6.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb6.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]
-  type: trojan
-  server: singapore.com
-  port: 443
-  password: bpb-trojan
-  udp: true
-  sni: kargar001.pages.dev
-  network: ws
-  ws-opts:
-    path: /tr?ed=2560
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-49
-  type: vless
-  server: nuclear.us.kg
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  udp: true
-  servername: nuclear.us.kg
-  tls: true
-  network: ws
-  ws-opts:
-    path: /free/1.226.227.169:50001
-    headers:
-      Host: nuclear.us.kg
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-56
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  servername: vp12.1145678.xyz
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /torrent/documents/photos
-    headers:
-      Host: vp12.1145678.xyz
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-2
-  type: vless
-  server: epam.com
-  port: 443
-  uuid: cced2d3b-9840-4579-a6b3-5de365f3bf50
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: wallweb6.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-50
-  type: vless
-  server: edge-relay-c9db.edge-edge-relay-be8e.workers.dev
-  port: 443
-  uuid: 8a540f3b-04c7-4e22-924a-51a0b6fad164
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: edge-relay-c9db.edge-edge-relay-be8e.workers.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-57
-  type: vless
-  server: ip13.shabkhosh.sbs
-  port: 443
-  uuid: bf20cf5a-30c1-4022-9bcb-ba798ad51531
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: wallweb7.pages.dev
-- name: 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-18
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: ec23f217-23a1-4f62-b98d-ba56070de89c
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: wallweb4.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-2
-  type: vless
-  server: k9-85j.pages.dev
-  port: 443
-  uuid: 3dc83518-4002-485e-a066-d3bbcaaa2b2e
-  udp: true
-  servername: K9-85J.paGEs.Dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /1WWzkWgNslKTcceU?ed=2560
-    headers:
-      Host: K9-85J.paGEs.Dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: 85550ebf-fd43-42dd-9801-bda528fea2fc
-  udp: true
-  servername: wallweb5.pages.dev
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb5.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-2
-  type: vless
-  server: ip13.shabkhosh.sbs
-  port: 443
-  uuid: bf20cf5a-30c1-4022-9bcb-ba798ad51531
-  udp: true
-  servername: wallweb7.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb7.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-51
-  type: vless
-  server: cfnode-11ivy8.pages.dev
-  port: 443
-  uuid: 2ea2719c-23e1-4cde-b192-c8652d55d9e5
-  udp: true
-  servername: cfnode-11ivy8.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cfnode-11ivy8.pages.dev
-- name: 🇨🇦 Canada, Toronto | [BL]-2
-  type: vless
-  server: web-tomcat.pages.dev
-  port: 443
-  uuid: 2cf94f4d-9d5b-49ca-81a3-ddc0529a2dac
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-- name: '[OpenRay] 🌐XX-638'
-  type: vless
-  server: medium.com
-  port: 443
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  udp: true
-  servername: rayan-007.maxima.dpdns.org
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /XIXVPN?ed=2560
-    headers:
-      Host: rayan-007.maxima.dpdns.org
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-3
-  type: vless
-  server: ld.235231.xyz
-  port: 443
-  uuid: 65d3f9b3-d289-4a8e-9c87-90bba156de30
-  udp: true
-  servername: ld.235231.xyz
-  tls: true
-  network: ws
-  ws-opts:
-    path: /fp=chrome
-    headers:
-      Host: ld.235231.xyz
-- name: 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-3
-  type: vless
-  server: k9-85j.pages.dev
-  port: 443
-  uuid: 3dc83518-4002-485e-a066-d3bbcaaa2b2e
-  udp: true
-  servername: k9-85j.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: k9-85j.pages.dev
-- name: 🇨🇦 Canada, Toronto | [BL]-3
-  type: vless
-  server: web-tomcat.pages.dev
-  port: 443
-  uuid: 2cf94f4d-9d5b-49ca-81a3-ddc0529a2dac
-  udp: true
-  servername: web-tomcat.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: web-tomcat.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-58
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  servername: vp18.1145678.xyz
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: vp18.1145678.xyz
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-59
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  servername: vp19.1145678.xyz
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /images/classify/dh
-    headers:
-      Host: vp19.1145678.xyz
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-52
-  type: vless
-  server: 14f7f5f0.mrbl69black.pages.dev
-  port: 443
-  uuid: 0d5a2112-789f-4755-88e6-61a1a8f8067b
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-- name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  type: vless
-  server: spacex.com
-  port: 443
-  uuid: cced2d3b-9840-4579-a6b3-5de365f3bf50
-  udp: true
-  servername: wallweb6.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb6.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-3
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: ec23f217-23a1-4f62-b98d-ba56070de89c
-  udp: true
-  servername: wallweb4.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb4.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-4
-  type: trojan
-  server: russia.com
-  port: 443
-  password: bpb-trojan
-  udp: true
-  sni: kargar001.pages.dev
-  network: ws
-  ws-opts:
-    path: /tr?ed=2560
-    headers:
-      Host: kargar001.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-53
-  type: vless
-  server: 14f7f5f0.mrbl69black.pages.dev
-  port: 443
-  uuid: 0d5a2112-789f-4755-88e6-61a1a8f8067b
-  udp: true
-  servername: 14f7f5f0.mrbl69black.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 14f7f5f0.mrbl69black.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-54
-  type: vless
-  server: epam.com
-  port: 443
-  uuid: 8895be79-9817-4011-b81a-14a35a3d328e
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: wallweb-boi.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-55
-  type: vless
-  server: epam.com
-  port: 443
-  uuid: 8895be79-9817-4011-b81a-14a35a3d328e
-  udp: true
-  servername: wallweb-boi.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: wallweb-boi.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-60
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  servername: v1n4.11676767.xyz
-  tls: true
-  network: ws
-  ws-opts:
-    path: /star/topics/blogs
-    headers:
-      Host: v1n4.11676767.xyz
-- name: 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-5
-  type: vless
-  server: k9-85j.pages.dev
-  port: 443
-  uuid: 3dc83518-4002-485e-a066-d3bbcaaa2b2e
-  udp: true
-  client-fingerprint: randomized
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: k9-85j.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-61
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  servername: vp22.1145678.xyz
-  tls: true
-  network: ws
-  ws-opts:
-    path: /m/club/seasons
-    headers:
-      Host: vp22.1145678.xyz
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-62
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  servername: v2n6.11676767.xyz
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ranking/htm
-    headers:
-      Host: v2n6.11676767.xyz
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-63
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  servername: v2n1.11676767.xyz
-  tls: true
-  network: ws
-  ws-opts:
-    path: /static/cart
-    headers:
-      Host: v2n1.11676767.xyz
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-64
-  type: vless
-  server: www.speedtest.net
-  port: 443
-  uuid: d37a75db-76b6-4db8-b213-0d5b044d138d
-  udp: true
-  servername: top-e4s.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: top-e4s.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-65
-  type: vless
-  server: saas.sin.fan
-  port: 443
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  udp: true
-  servername: vp5.1145678.xyz
-  tls: true
-  network: ws
-  ws-opts:
-    path: /servicefp
-    headers:
-      Host: vp5.1145678.xyz
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-56
-  type: vless
-  server: support.zoom.us.vltj.qzz.io
-  port: 443
-  uuid: 506e4a91-1d05-5683-b84c-2113f673cb19
-  udp: true
-  servername: support.zoom.us.vltj.qzz.io
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /id-pusat
-    headers:
-      Host: support.zoom.us.vltj.qzz.io
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-66
-  type: vless
-  server: help1.digikala-aparat-zula.com
-  port: 443
-  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: wallweb-av6.pages.dev
-- name: 🇨🇦 Canada, Toronto | [BL]-4
-  type: vless
-  server: shin-ra.ccwu.cc
-  port: 443
-  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
-  udp: true
-  servername: shin-ra.ccwu.cc
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: shin-ra.ccwu.cc
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-57
-  type: vless
-  server: yd.2.hhhhh.eu.org
-  port: 443
-  uuid: f0d6aa7c-0b34-4b68-9af8-1ea5e0b39bdc
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: ssj-wkg.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-4
+- name: 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
   type: vless
   server: leviko-us4350.shopingggg.ir
   port: 443
@@ -2275,110 +1486,6 @@ proxies:
     path: /proxyip
     headers:
       Host: freeceshi6.frii.site
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-58
-  type: vless
-  server: irfsa.ir
-  port: 443
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  udp: true
-  servername: putak.wopexiv687.workers.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /proxyip=103.229.31.44
-    headers:
-      Host: putak.wopexiv687.workers.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-59
-  type: vless
-  server: nuclear.us.kg
-  port: 443
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /free/103.101.153.32:443
-    headers:
-      Host: nuclear.us.kg
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-60
-  type: vless
-  server: yd.2.hhhhh.eu.org
-  port: 443
-  uuid: f0d6aa7c-0b34-4b68-9af8-1ea5e0b39bdc
-  udp: true
-  servername: ssj-wkg.pages.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ssj-wkg.pages.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-61
-  type: vless
-  server: kclx.eu.org
-  port: 443
-  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
-  udp: true
-  servername: kclx.eu.org
-  tls: true
-  network: ws
-  ws-opts:
-    path: /154.16.10.34-8080
-    headers:
-      Host: kclx.eu.org
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-62
-  type: vless
-  server: vless.gem-audio2.us.ci
-  port: 443
-  uuid: f14f0e7d-bcb0-416b-855a-17344b0242b9
-  udp: true
-  servername: vless.gem-audio2.us.ci
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-5
-  type: vless
-  server: tether.dev
-  port: 443
-  uuid: dd2525ab-e5b7-58c4-a9b4-511100000000
-  udp: true
-  servername: xtdp.akaram-5624-cba.workers.dev
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: xtdp.akaram-5624-cba.workers.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-63
-  type: vless
-  server: vless2.gem-audio2.us.ci
-  port: 443
-  uuid: f14f0e7d-bcb0-416b-855a-17344b0242b9
-  udp: true
-  servername: vless2.gem-audio2.us.ci
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-- name: '[OpenRay] 🌐XX-381'
-  type: vless
-  server: uk1.connectsuite.org
-  port: 443
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
-  udp: true
-  servername: uk1.connectsuite.org
-  tls: true
-  network: ws
-  ws-opts:
-    path: /cdn-cgi/ws
-    headers:
-      Host: uk1.connectsuite.org
 - name: 🇺🇸 United States | 🌐 | [BL]
   type: trojan
   server: ipfast.kingmna.com
@@ -2392,52 +1499,6 @@ proxies:
     path: /TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER-TELEGRAM-@NUFiLTER
     headers:
       Host: looaboi4jji.global.ssl.fastly.net.
-- name: 🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL]
-  type: vless
-  server: 6izx53eiuuzs.sandy-canyon-9143.workers.dev
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-17877f908191
-  udp: true
-  servername: 6izx53eiuuzs.sandy-canyon-9143.workers.dev
-  tls: true
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/17877f908191
-    headers:
-      Host: 6izx53eiuuzs.sandy-canyon-9143.workers.dev
-- name: '[OpenRay] 🌐XX-213'
-  type: vless
-  server: uk1.connectsuite.org
-  port: 443
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /cdn-cgi/ws
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-64
-  type: vless
-  server: tn1r.eu.cc
-  port: 443
-  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
-  udp: true
-  servername: tn1r.eu.cc
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /id-pusat
-    headers:
-      Host: tn1r.eu.cc
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-65
-  type: vless
-  server: vless3.gem-audio2.us.ci
-  port: 443
-  uuid: f14f0e7d-bcb0-416b-855a-17344b0242b9
-  udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
 - name: '@vpnsal'
   type: vless
   server: vps3.nemnogogo.com
@@ -2448,43 +1509,29 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-66
+- name: '[OpenRay] 🌐XX-381'
   type: vless
-  server: vless3.gem-audio2.us.ci
+  server: uk1.connectsuite.org
   port: 443
-  uuid: f14f0e7d-bcb0-416b-855a-17344b0242b9
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
   udp: true
-  servername: vless3.gem-audio2.us.ci
-  client-fingerprint: chrome
+  servername: uk1.connectsuite.org
   tls: true
   network: ws
   ws-opts:
-    path: /
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-67
-  type: vless
-  server: wangcai.cf.877774.xyz
-  port: 443
-  uuid: 16e80f38-e97e-4b14-ba89-77d87a3e637f
-  udp: true
-  servername: ex3r.qzz.io
-  tls: true
-  network: ws
-  ws-opts:
-    path: /sg-orcl
+    path: /cdn-cgi/ws
     headers:
-      Host: ex3r.qzz.io
-- name: 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-6
-  type: vless
-  server: cloudflare.dev
+      Host: uk1.connectsuite.org
+- name: '[OpenRay] 🌐XX-1081'
+  type: trojan
+  server: muddy-frost-4e2d.vpnetwork3567.workers.dev
   port: 443
-  uuid: dd2525ab-e5b7-58c4-a9b4-511100000001
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  client-fingerprint: chrome
-  tls: true
   network: ws
   ws-opts:
     headers:
-      Host: xtdp.akaram-5624-cba.workers.dev
+      Host: muddy-frost-4e2d.vpnetwork3567.workers.dev
 - name: '[OpenRay] 🌐XX-81'
   type: vless
   server: vps3.nemnogogo.com
@@ -2493,31 +1540,6 @@ proxies:
   udp: true
   servername: vps3.nemnogogo.com
   client-fingerprint: safari
-  tls: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-68
-  type: vless
-  server: cf.090227.xyz
-  port: 443
-  uuid: 3de5a94c-aadc-4e40-ba1a-7d4b6545f8a3
-  udp: true
-  servername: oooyo.bi8bo.cyou
-  tls: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: oooyo.bi8bo.cyou
-- name: '[OpenRay] 🌐XX-1192'
-  type: vless
-  server: leviko-ru0640.shopingggg.ir
-  port: 443
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  udp: true
-  servername: vps3.nemnogogo.com
-  client-fingerprint: firefox
   tls: true
   network: grpc
   grpc-opts:
@@ -2536,72 +1558,72 @@ proxies:
     path: /700gvl
     headers:
       Host: fr-free.fastestrelay.com
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-4
+- name: 🇺🇸 United States, Columbus | 🌐 | [BL]
   type: vless
-  server: chatgpt.com
+  server: cf.090227.xyz
   port: 443
-  uuid: 64726966-0000-4000-8000-740000000000
+  uuid: 419032d7-2247-49c9-85c8-cc454b7c11d6
   udp: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  servername: tiffany-capability-very-apartments.trycloudflare.com
+  tls: true
+  network: ws
+  ws-opts:
+    path: /vl-419032d7
+    headers:
+      Host: tiffany-capability-very-apartments.trycloudflare.com
+- name: 🇦🇹 Austria, Vienna (Liesing) | [BL]
+  type: vless
+  server: ancient-haze-d203.vpnetwork3567.workers.dev
+  port: 443
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  udp: true
   client-fingerprint: chrome
   tls: true
   network: ws
   ws-opts:
-    path: /drift
     headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇫🇮 🇺🇸 | [BL]
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
+- name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
   type: vless
-  server: a2c.ir
+  server: ancient-haze-d203.vpnetwork3567.workers.dev
   port: 443
-  uuid: bc591bd5-3fc9-9f3e-b194-939100000004
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    headers:
-      Host: flow-turbo-727.deloy10120.workers.dev
-- name: 🇧🇪 Belgium, Zaventem | [BL]
-  type: trojan
-  server: muddy-frost-4e2d.vpnetwork3567.workers.dev
-  port: 443
-  password: 963A4918-A630-29DA-A873-093CDF8AD784
-  udp: true
-  sni: muddy-frost-4e2d.vpnetwork3567.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: muddy-frost-4e2d.vpnetwork3567.workers.dev
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 | [BL]
-  type: vless
-  server: chatgpt.com
-  port: 443
-  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
-  udp: true
-  servername: sinavm2.soft10.ir
-  client-fingerprint: chrome
-  tls: true
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm2.soft10.ir
-- name: 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-7
-  type: vless
-  server: cloudflare.dev
-  port: 443
-  uuid: dd2525ab-e5b7-58c4-a9b4-511100000001
-  udp: true
-  servername: xtdp.akaram-5624-cba.workers.dev
+  servername: ancient-haze-d203.vpnetwork3567.workers.dev
   client-fingerprint: chrome
   tls: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: xtdp.akaram-5624-cba.workers.dev
+      Host: ancient-haze-d203.vpnetwork3567.workers.dev
+- name: '[OpenRay] 🌐XX-1192'
+  type: vless
+  server: leviko-ru0640.shopingggg.ir
+  port: 443
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  udp: true
+  servername: vps3.nemnogogo.com
+  client-fingerprint: firefox
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇩🇪 德国 | DEU 7
+  server: cobblestone.merlano.monster
+  port: 443
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  tls: true
+  alpn:
+  - h2
+  servername: cobblestone.merlano.monster
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de5.v1
+  udp: true
 - name: '[OpenRay] 🌐XX-420'
   type: vless
   server: bookend.filnex.baby
@@ -2616,34 +1638,16 @@ proxies:
     path: /api/de1/stream
     headers:
       Host: bookend.filnex.baby
-- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-67
-  type: vless
-  server: ip13.shabkhosh.sbs
+- name: 🇸🇬 Singapore, Singapore (Queenstown Estate) | [BL]
+  type: trojan
+  server: lingering-fire-1fe9.vpnetwork3567.workers.dev
   port: 443
-  uuid: 49e72868-abfd-4557-b474-6777853a9c8d
+  password: 963A4918-A630-29DA-A873-093CDF8AD784
   udp: true
-  servername: wallwebb33p08.wallwebvycxcl.workers.dev
-  client-fingerprint: chrome
-  tls: true
   network: ws
   ws-opts:
-    path: /
     headers:
-      Host: wallwebb33p08.wallwebvycxcl.workers.dev
-- name: '[OpenRay] 🌐XX-851'
-  type: vmess
-  server: bYWXdhIRqKJj8XAZ.v.3dns.vip
-  port: 443
-  uuid: 234a80412b4d44a3a8d8523cbfd58dc4
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: bYWXdhIRqKJj8XAZ.v.3dns.vip
+      Host: lingering-fire-1fe9.vpnetwork3567.workers.dev
 - name: '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
   type: vless
   server: xssite.webredirect.org
@@ -2656,319 +1660,1067 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: '[OpenRay] 🌐XX-2053'
-  type: vless
-  server: still-bar-5702.vpnetwork3567.workers.dev
+- name: 🇩🇪 德国 | DEU 10
+  server: woodgrain.filnex.baby
   port: 443
-  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  tls: true
+  alpn:
+  - http/1.1
+  servername: larchbank.elvano.website
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de2/stream
+    headers:
+      Host: woodgrain.filnex.baby
   udp: true
-  servername: still-bar-5702.vpnetwork3567.workers.dev
+- name: 🇩🇪 德国 | DEU 16
+  server: sienna.merlano.monster
+  port: 443
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  tls: true
+  alpn:
+  - http/1.1
+  servername: sienna.merlano.monster
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de4/stream
+    headers:
+      Host: sienna.merlano.monster
+  udp: true
+- name: SCP|HK
+  type: vmess
+  server: referred-exposure-perhaps-greetings.trycloudflare.com
+  port: 443
+  uuid: 2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: referred-exposure-perhaps-greetings.trycloudflare.com
+  network: ws
+  ws-opts:
+    path: /2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea-vm
+    headers:
+      Host: referred-exposure-perhaps-greetings.trycloudflare.com
+- name: '@ConfigV2RayNG-2'
+  type: vless
+  server: id1vpn.jagoanip.my.id
+  port: 443
+  uuid: c3d91e48-6d7c-406d-aea3-b99c575dcd80
+  udp: true
+  servername: id1vpn.jagoanip.my.id
+  tls: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: id1vpn.jagoanip.my.id
+- name: '[OpenRay] 🌐XX-213'
+  type: vless
+  server: uk1.connectsuite.org
+  port: 443
+  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /cdn-cgi/ws
+- name: trojan-blog.findlocaljobnetworkandbuildcommunityconnections.com
+  type: trojan
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  udp: true
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+- name: '[OpenRay] 🌐XX-443'
+  type: trojan
+  server: leviko-ca4436.shopingggg.ir
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: blog.connectingpeoplewithgreatjobs.com
+- name: '[OpenRay] 🌐XX-913'
+  type: trojan
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  port: 443
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  udp: true
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+- name: 🇨🇦 Canada, Montreal | [BL]
+  type: vless
+  server: kuruish.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  tls: true
+- name: '[OpenRay] 🌐XX-1476'
+  type: trojan
+  server: leviko-nl8252.shopingggg.ir
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: indyourperfectremotetechjobfromthecomfortofhome.com
+- name: '[OpenRay] 🌐XX-824'
+  type: trojan
+  server: leviko-de5094.shopingggg.ir
+  port: 443
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  udp: true
+  sni: courses.iloverussia2026.com
+- name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]-3
+  type: vless
+  server: kuruish.org
+  port: 443
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  udp: true
+  servername: kuruish.org
+  client-fingerprint: chrome
+  tls: true
+- name: FI【高速节点：https://vip.a3f.xyz】20
+  type: vless
+  server: mail1.besttotaldns.com
+  port: 443
+  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
+  udp: true
+  servername: mail1.besttotaldns.com
+  tls: true
+  flow: xtls-rprx-vision
+- name: '@prrofile_purple'
+  type: trojan
+  server: fi.zhabulik.ru
+  port: 443
+  password: WFer-5gN21nfHbVB2N8s71Z74EPUfzVj
+  udp: true
+  sni: fi.zhabulik.ru
+- type: vless
+  name: ❓未知丨yoyapai.com (44)
+  server: api.ferrin.uk
+  port: 443
+  uuid: 7d1a74fd-8a38-4a29-863f-5da53a9e557e
+  udp: true
+  tls: true
+  servername: 7d1a74fd.ferrin.uk
+  sni: 7d1a74fd.ferrin.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: xhttp
+  xhttp-opts:
+    path: /es
+    mode: stream-one
+- name: 🇩🇪 德国 | DEU 6
+  server: prairie.moltex.click
+  port: 443
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: alderpond.moltex.click
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/de2/sync
+    host: prairie.moltex.click
+    mode: auto
+  udp: true
+- name: 🇩🇪 德国 | DEU 2
+  server: sunfield.moltex.click
+  port: 443
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: fennel.moltex.click
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/de1/sync
+    host: sunfield.moltex.click
+    mode: auto
+  udp: true
+- name: 🇭🇰 香港 | HKG 2
+  server: 5641sdds.df6h451rh.xin
+  port: 443
+  type: anytls
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 德国 | DEU 5
+  server: pigment.merlano.monster
+  port: 443
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: fieldmark.merlano.monster
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/de2/sync
+    host: pigment.merlano.monster
+    mode: auto
+  udp: true
+- name: 🇩🇪 德国 | DEU 12
+  server: copperplate.gerqix.online
+  port: 443
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  tls: true
+  alpn:
+  - h2
+  - http/1.1
+  servername: copperplate.gerqix.online
+  client-fingerprint: firefox
+  network: xhttp
+  xhttp-opts:
+    path: /api/de6/sync
+    host: copperplate.gerqix.online
+    mode: auto
+  udp: true
+- name: 🇭🇰 香港 | HKG 5
+  server: ibsdsf.df6h451rh.xin
+  port: 443
+  type: anytls
+  password: 2902c46c8493
+  udp: true
+  sni: docs.microsoft.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 6
+  server: signal.lovehk.xyz
+  port: 443
+  type: anytls
+  password: 934f37d8-efdc-4bb2-9cd3-d55ae5de6213
+  udp: true
+  sni: signal.lovehk.xyz
+  skip-cert-verify: true
+- name: 🇺🇸 美国 | USA 2
+  server: signal.lovehk.xyz
+  port: 443
+  type: anytls
+  password: e747a3a6-1759-4211-a759-75e0ef2ea52b
+  udp: true
+  sni: signal.lovehk.xyz
+  skip-cert-verify: true
+- name: 🇩🇪 德国 | DEU 15
+  server: ns2.irts.lol
+  port: 443
+  type: vless
+  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  tls: true
+  servername: ns2.irts.lol
+  client-fingerprint: chrome
+  network: tcp
+  udp: true
+- name: 节点日期：2026-11-28
+  type: vless
+  server: ns2.irts.lol
+  port: 443
+  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
+  udp: true
+  servername: ns2.irts.lol
+  client-fingerprint: chrome
+  tls: true
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  type: anytls
+  password: 2902c46c8493
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
+  udp: true
+- name: 🇩🇪 Germany, Düsseldorf | 🌐 | [BL]
+  type: vmess
+  server: de.zhou-yufan.com
+  port: 443
+  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: de.zhou-yufan.com
+- name: 🇩🇪 Germany, Düsseldorf | 🌐 | [BL]-2
+  type: vmess
+  server: de.zhou-yufan.com
+  port: 443
+  uuid: f38e591d-d13a-4c30-9763-6be3ad65f3ec
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  network: raw
+- name: '@ConfigV2RayNG-3'
+  type: ss
+  server: leviko-nl1751.shopingggg.ir
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
+  udp: true
+- name: '@V2rayNGVPN-2'
+  type: ss
+  server: leviko-fr1459.shopingggg.ir
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: ySGkGhr2sKHV
+  udp: true
+- name: '[OpenRay] 🌐XX-732'
+  type: hysteria2
+  server: promo.betust.net
+  port: 443
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  udp: true
+  sni: promo.betust.net
+- name: 🇭🇰 Hong Kong, Fo Tan | [BL]
+  type: hysteria2
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  udp: true
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: '[OpenRay] 🌐XX-667'
+  type: hysteria2
+  server: de2.substituteme.space
+  port: 443
+  password: PEisy6m-98HcX1TWZt0yXiCS7jRZG4IzKQTXo6k1qb4
+  udp: true
+  sni: de2.substituteme.space
+- name: '[OpenRay] 🌐XX-1433'
+  type: hysteria2
+  server: der.substituteme.space
+  port: 443
+  password: 7ltdv0p-ThUzWHLNKwejOnmWRVfgq7gswzL34GP_7n8
+  udp: true
+  sni: der.substituteme.space
+- name: '[OpenRay] 🌐XX-1631'
+  type: vless
+  server: leviko-hk5202.shopingggg.ir
+  port: 31001
+  uuid: 12a4f736-2238-49ee-831f-5516f15cc951
+  udp: true
+  servername: mensura.cdn-apple.com
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: lzpIiMqHXas_qayw-HvrySb78FNkVroBOqniwqPXPzY
+    short-id: 39793bc4708abbbb
+  flow: xtls-rprx-vision
+- name: 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇯🇵 🇸🇪 | [BL]
+  type: vless
+  server: leviko-us6278.shopingggg.ir
+  port: 8443
+  uuid: 53bbdad4-2f4e-45db-8df4-fa491a6a7227
+  udp: true
+  servername: freeceshi6.frii.site
+  client-fingerprint: chrome
   tls: true
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: still-bar-5702.vpnetwork3567.workers.dev
+      Host: freeceshi6.frii.site
+- name: '[OpenRay] 🌐XX-1394'
+  type: vless
+  server: leviko-se4581.shopingggg.ir
+  port: 48115
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  udp: true
+  servername: 138-124-86-230.sslip.io
+  tls: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: '[OpenRay] 🌐XX-545'
+  type: vless
+  server: hw7.jirjirakirani.com
+  port: 993
+  uuid: 52406fc7-b008-4985-8de1-4bc43b2b873a
+  udp: true
+  servername: hw7.jirjirakirani.com.
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw7.jirjirakirani.com.
+- name: 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
+  type: vless
+  server: ev.zoom.us
+  port: 8443
+  uuid: c9b4fb55-1634-436f-beb7-3b1db5b0131d
+  udp: true
+  servername: free-server.techsonic.dev
+  client-fingerprint: chrome
+  tls: true
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: '[OpenRay] 🌐XX-659'
+  type: vless
+  server: ifi1.modemjibi.com
+  port: 993
+  uuid: 17ead557-8407-42ae-b9a1-f11a869f99c6
+  udp: true
+  servername: ifi1.modemjibi.com.
+  client-fingerprint: chrome
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ifi1.modemjibi.com.
+- name: 🇸🇪 Sweden, Stockholm | 🌐 | [BL]
+  type: vless
+  server: ws.dhafhdtjdti.site
+  port: 2053
+  uuid: 9f749472-c636-4c5a-af51-7f8feefaac81
+  udp: true
+  servername: ws.dhafhdtjdti.site
+  client-fingerprint: chrome
+  tls: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ws.dhafhdtjdti.site
+- name: '[OpenRay] 🌐XX-1082'
+  type: vless
+  server: 3h-kazakhstan1.09vpn.com
+  port: 8443
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
+  udp: true
+  tls: true
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: '[OpenRay] 🌐XX-1771'
+  type: vmess
+  server: leviko-at0752.shopingggg.ir
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: xmfhlpy.com
+- name: '[OpenRay] 🌐XX-1277'
+  type: vmess
+  server: leviko-se3307.shopingggg.ir
+  port: 1270
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: true
+  servername: xmfhlpy.com
+- name: .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]-5
+  type: vless
+  server: chatgpt.com
+  port: 8443
+  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
+  udp: true
+  servername: sinavm2.soft10.ir
+  client-fingerprint: ios
+  tls: true
+  network: xhttp
+- name: 🇯🇵 日本 | JPN 5
+  server: media.gosthk.site
+  port: 57180
+  type: anytls
+  password: 1fe082ef-9dce-4481-ae92-fbd53cf2f679
+  udp: true
+  sni: media.gosthk.site
+  skip-cert-verify: true
+- name: 🇻🇳 越南 | VNM 2
+  server: u2xak.mjanyt.com
+  port: 1665
+  type: anytls
+  password: 967fbc94-fccd-46c2-9241-be92d4906186
+  udp: true
+  sni: any.mjanyt.com
+  skip-cert-verify: true
+- name: '[OpenRay] 🌐XX-537'
+  type: trojan
+  server: jpk.wentibuxiaobuda.xyz
+  port: 9443
+  password: gfVP588mN_WKDUVTnHq18uO7fCdlDW76Wu0Zbd7vtzs
+  udp: true
+  sni: jpk.wentibuxiaobuda.xyz
+- name: '[OpenRay] 🌐XX-1017'
+  type: ss
+  server: leviko-ch0322.shopingggg.ir
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: '[OpenRay] 🌐XX-1769'
+  type: ss
+  server: jpa.123069.xyz
+  port: 53758
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+  udp: true
+- name: '[OpenRay] 🌐XX-218'
+  type: ss
+  server: leviko-it8672.shopingggg.ir
+  port: 8388
+  cipher: aes-256-gcm
+  password: itzvpn@321
+  udp: true
+- name: '[OpenRay] 🌐XX-1786'
+  type: ss
+  server: leviko-fr5418.shopingggg.ir
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: '[OpenRay] 🌐XX-78'
+  type: ss
+  server: news.bushyjenz.cyou
+  port: 42878
+  cipher: chacha20-ietf-poly1305
+  password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
+  udp: true
+- name: '@v2ray_phoenix'
+  type: ss
+  server: sg1.ssobfs.site
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: MmFkN
+  udp: true
+- name: HK【高速节点：https://vip.a3f.xyz】16
+  type: ss
+  server: waic.pro.main.sys-metric-report.com
+  port: 28014
+  cipher: chacha20-ietf-poly1305
+  password: abc62f00-95a8-4c2e-a85d-36a2cdc977da
+  udp: true
+- name: 🌐سرور-2
+  type: ss
+  server: S23.fusetea.ir
+  port: 2089
+  cipher: chacha20-ietf-poly1305
+  password: DVlt-OeAV4RiLMwT9e0T72nnFtMG2W3o
+  udp: true
+- name: '[OpenRay] 🌐XX-1749'
+  type: ss
+  server: leviko-ch7340.shopingggg.ir
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: '[OpenRay] 🌐XX-1953'
+  type: ss
+  server: leviko-ch5965.shopingggg.ir
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: '[OpenRay] 🌐XX-1318'
+  type: ss
+  server: leviko-sg3063.shopingggg.ir
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: '[OpenRay] 🌐XX-1373'
+  type: ss
+  server: p141.panda001.net
+  port: 4652
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+  udp: true
+- name: 🌐سرور-3
+  type: ss
+  server: info-ss.pasar2.avqu.ir
+  port: 8443
+  cipher: chacha20-ietf-poly1305
+  password: xlipBmmLMbSvuDMhHlG7BAv9hgBi_ttx
+  udp: true
+- name: ss-Ir.wbzo.ir
+  type: ss
+  server: Ir.wbzo.ir
+  port: 2060
+  cipher: chacha20-ietf-poly1305
+  password: pmZmPZcbrauTSbfdc6-RLIaR_F7bW3H1
+  udp: true
+- name: 🇯🇵 日本 | JPN
+  server: jp.777678.xyz
+  port: 43812
+  type: hysteria2
+  password: nDEKfD96Ue
+  auth: nDEKfD96Ue
+  sni: jp.777678.xyz
+  skip-cert-verify: true
+  udp: true
+- name: '[OpenRay] 🌐XX-362'
+  type: hysteria2
+  server: fre.guren1.me
+  port: 8443
+  password: c3a8753e-317e-479e-bee7-01adf5e2af7e
+  udp: true
+- name: 🇬🇧 英国 | GBR
+  server: uk-tube-01.stre4m.net
+  port: 13337
+  type: hysteria2
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  sni: mother-earth.fyi
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
+- name: '[OpenRay] 🌐XX-50'
+  type: hysteria2
+  server: fre.guren1.me
+  port: 8443
+  password: e795f042-4c9f-46d1-9d85-8816e0ff0cfb
+  udp: true
+  sni: fre.guren1.me
+- name: '[OpenRay] 🇺🇸US-1619'
+  type: vless
+  server: 3h-unitedstates1.09vpn.com
+  port: 80
+  uuid: 18cf8db1-9f86-43f7-baa0-382efb7f2dfa
+  udp: true
+  servername: 3h-unitedstates1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: '[OpenRay] 🌐XX-1266'
+  type: vless
+  server: uspanel.unixzone.us
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  servername: uspanel.unixzone.us
+  network: ws
+  ws-opts:
+    path: /usserver
+    headers:
+      Host: uspanel.unixzone.us
+- name: '[OpenRay] 🌐XX-384'
+  type: vless
+  server: uspanel.unixzone.us
+  port: 30016
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
+  udp: true
+  network: ws
+  ws-opts:
+    path: /usserver
+- name: '[OpenRay] 🌐XX-1858'
+  type: vless
+  server: SC-TheNetherlands2.09vpn.com
+  port: 80
+  uuid: e73df646-1f62-41bf-8c50-653497d603d0
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: SC-TheNetherlands2.09vpn.com
+- name: '[OpenRay] 🇳🇱NL-407'
+  type: vless
+  server: SC-TheNetherlands1.09vpn.com
+  port: 80
+  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: SC-TheNetherlands1.09vpn.com
+- name: '[OpenRay] 🌐XX-592'
+  type: vless
+  server: OV-France1.09vpn.com
+  port: 80
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-France1.09vpn.com
+- name: '[OpenRay] 🌐XX-546'
+  type: vless
+  server: ov-france1.09vpn.com
+  port: 80
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: '[OpenRay] 🇩🇪DE-199'
+  type: vless
+  server: ov-germany1.09vpn.com
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  servername: ov-germany1.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: '[OpenRay] 🌐XX-2032'
+  type: vless
+  server: sc-thenetherlands2.09vpn.com
+  port: 80
+  uuid: e73df646-1f62-41bf-8c50-653497d603d0
+  udp: true
+  servername: SC-TheNetherlands2.09vpn.com
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: sc-thenetherlands2.09vpn.com
+- name: '[OpenRay] 🌐XX-1489'
+  type: vless
+  server: OV-Germany1.09vpn.com
+  port: 80
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: '[OpenRay] 🇳🇱NL-272'
+  type: vless
+  server: sc-thenetherlands2.09vpn.com
+  port: 80
+  uuid: e73df646-1f62-41bf-8c50-653497d603d0
+  udp: true
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: '[OpenRay] 🇮🇱IL-40'
+  type: vless
+  server: platform115.golnamakcert.top
+  port: 80
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  udp: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
 proxy-groups:
 - name: AUTO-FAST
   type: url-test
   proxies:
   - '[OpenRay] 🌐XX-1649'
   - '[OpenRay] 🌐XX-533'
+  - 美国+纽约(Prudential)
   - '[OpenRay] 🌐XX-358'
-  - '[OpenRay] 🌐XX-805'
-  - '[OpenRay] 🌐XX-584'
   - '[OpenRay] 🌐XX-832'
-  - 🌐سرور
+  - '[OpenRay] 🌐XX-805'
   - '[OpenRay] 🌐XX-36'
+  - 🇪🇸 Spain, Madrid (Chamartín) | [BL]
   - '[OpenRay] 🌐XX-99'
+  - '[OpenRay] 🌐XX-584'
   - '[OpenRay] 🌐XX-439'
-  - '[OpenRay] 🌐XX-132'
-  - '[OpenRay] 🌐XX-184'
+  - '[OpenRay] 🌐XX-59'
   - '[OpenRay] 🌐XX-1402'
   - CA【高速节点：https://vip.a3f.xyz】34
-  - '[OpenRay] 🌐XX-59'
-  - '[OpenRay] 🌐XX-106'
-  - '[OpenRay] 🇸🇪SE-4'
-  - '[OpenRay] 🇺🇸US-1090'
-  - '[OpenRay] 🇸🇪SE-31'
-  - '[OpenRay] 🇱🇹LT-17'
-  - '[OpenRay] 🇬🇧GB-257'
-  - '[OpenRay] 🇸🇪SE-26'
-  - '[OpenRay] 🇸🇪SE-9'
   - '[OpenRay] 🇺🇸US-268'
-  - '[OpenRay] 🇧🇬BG-11'
+  - '[OpenRay] 🇬🇧GB-257'
+  - '[OpenRay] 🇺🇸US-1090'
+  - '[OpenRay] 🇸🇪SE-26'
   - '[OpenRay] 🇸🇰SK-32'
-  - '[OpenRay] 🇸🇰SK-10'
-  - '[OpenRay] 🇺🇸US-1568'
-  - '[OpenRay] 🇱🇹LT-53'
-  - '[OpenRay] 🇺🇸US-800'
-  - '[OpenRay] 🇧🇷BR-96'
-  - '[OpenRay] 🇱🇹LT-20'
-  - '[OpenRay] 🇺🇸US-720'
-  - '[OpenRay] 🇮🇱IL-3'
-  - '[OpenRay] 🇬🇧GB-183'
-  - '[OpenRay] 🇺🇸US-1125'
-  - '[OpenRay] 🇺🇸US-305'
-  - 🇮🇱IL以色列丨yoyapai.com
-  - NE【高速节点：https://vip.a3f.xyz】21
-  - '[OpenRay] 🇺🇸US-13'
-  - '[OpenRay] 🇱🇹LT-33'
-  - '[OpenRay] 🇸🇰SK-12'
-  - '[OpenRay] 🇺🇸US-421'
-  - '[OpenRay] 🇺🇸US-494'
-  - '[OpenRay] 🇱🇹LT-35'
-  - '[OpenRay] 🇧🇷BR-64'
-  - '[OpenRay] 🇩🇪DE-116'
+  - '[OpenRay] 🇧🇬BG-11'
+  - '[OpenRay] 🇸🇪SE-31'
+  - '[OpenRay] 🇸🇪SE-4'
   - '[OpenRay] 🇮🇱IL-11'
-  - '[OpenRay] 🇫🇮FI-37'
-  - '[OpenRay] 🇩🇪DE-173'
-  - '[OpenRay] 🇺🇸US-1017'
-  - '[OpenRay] 🇪🇸ES-7'
-  - '[OpenRay] 🇺🇸US-1113'
-  - '[OpenRay] 🇩🇪DE-38'
-  - '[OpenRay] 🇧🇷BR-13'
-  - '[OpenRay] 🇸🇪SE-1'
-  - '[OpenRay] 🇩🇪DE-9'
-  - '[OpenRay] 🇮🇱IL-7'
-  - '[OpenRay] 🇸🇪SE-47'
-  - '[OpenRay] 🇺🇸US-51'
-  - '[OpenRay] 🇺🇸US-626'
-  - '[OpenRay] 🇱🇹LT-70'
-  - '[OpenRay] 🇧🇷BR-104'
-  - '[OpenRay] 🇱🇹LT-29'
-  - '[OpenRay] 🇸🇰SK-8'
-  - '[OpenRay] 🇪🇸ES-6'
-  - '[OpenRay] 🇺🇸US-380'
-  - '[OpenRay] 🇮🇱IL-16'
-  - '[OpenRay] 🇱🇹LT-19'
-  - '[OpenRay] 🇺🇸US-12'
   - '[OpenRay] 🇮🇱IL-2'
+  - '[OpenRay] 🇸🇪SE-9'
+  - '[OpenRay] 🇪🇸ES-7'
+  - '[OpenRay] 🇸🇰SK-10'
+  - '[OpenRay] 🇱🇹LT-19'
+  - '[OpenRay] 🇸🇰SK-7'
   - '[OpenRay] 🇺🇸US-296'
-  - 🇳🇱 荷兰 | NLD 2
   - '[OpenRay] 🇧🇷BR-5'
-  - '[OpenRay] 🇧🇷BR-58'
-  - 🇳🇱NL荷兰丨yoyapai.com (2)
-  - '[OpenRay] 🇺🇸US-779'
-  - '[OpenRay] 🇸🇨SC-15'
-  - '[OpenRay] 🇺🇸US-971'
-  - '[OpenRay] 🇺🇸US-989'
-  - RO【高速节点：https://vip.a3f.xyz】24
+  - '[OpenRay] 🇺🇸US-1017'
+  - '[OpenRay] 🇱🇹LT-17'
+  - '[OpenRay] 🇮🇱IL-3'
   - '[OpenRay] 🇺🇸US-355'
-  - '[OpenRay] 🇸🇰SK-22'
-  - NE【高速节点：https://vip.a3f.xyz】23
-  - NE【高速节点：https://vip.a3f.xyz】25
-  - '[OpenRay] 🇺🇸US-642'
-  - '[OpenRay] 🇺🇸US-1508'
-  - '[OpenRay] 🇪🇸ES-18'
+  - '[OpenRay] 🇧🇷BR-64'
+  - '[OpenRay] 🇸🇪SE-47'
+  - '[OpenRay] 🇱🇹LT-70'
   - ES【高速节点：https://vip.a3f.xyz】27
   - '[OpenRay] 🇳🇪NE-6'
-  - 西班牙+V2CROSS.COM
-  - '[OpenRay] 🇸🇰SK-7'
-  - NG【高速节点：https://vip.a3f.xyz】28
-  - 🇪🇸 西班牙 | ESP 2
-  - '[OpenRay] 🇳🇬NG-2'
-  - '[OpenRay] 🇳🇬NG-7'
-  - '[OpenRay] 🇱🇾LY-16'
+  - LY【高速节点：https://vip.a3f.xyz】14
+  - '[OpenRay] 🇺🇸US-626'
+  - '[OpenRay] 🇧🇷BR-13'
+  - '[OpenRay] 🇺🇸US-13'
+  - '[OpenRay] 🇪🇸ES-6'
   - '[OpenRay] 🇸🇰SK-15'
-  - '[OpenRay] 🇺🇸US-77'
-  - '[OpenRay] 🇺🇸US-661'
-  - 🇪🇸 西班牙 | ESP
-  - NE【高速节点：https://vip.a3f.xyz】32
+  - NE【高速节点：https://vip.a3f.xyz】21
+  - '[OpenRay] 🇺🇸US-720'
+  - '[OpenRay] 🇮🇱IL-16'
+  - '[OpenRay] 🇧🇷BR-96'
+  - 🇮🇱IL以色列丨yoyapai.com
+  - '[OpenRay] 🇱🇾LY-16'
+  - '[OpenRay] 🇺🇸US-1125'
+  - '[OpenRay] 🇺🇸US-305'
   - '[OpenRay] 🇸🇰SK-29'
-  - '[OpenRay] 🇺🇸US-26'
-  - '[OpenRay] 🇱🇹LT-24'
-  - '[OpenRay] 🇺🇸US-362'
-  - US【高速节点：https://vip.a3f.xyz】35
+  - '[OpenRay] 🇺🇸US-661'
+  - '[OpenRay] 🇱🇹LT-20'
+  - '[OpenRay] 🇸🇪SE-1'
+  - '[OpenRay] 🇩🇪DE-38'
+  - NE【高速节点：https://vip.a3f.xyz】25
+  - '[OpenRay] 🇸🇰SK-8'
+  - '[OpenRay] 🇳🇬NG-4'
+  - '[OpenRay] 🇱🇹LT-33'
+  - '[OpenRay] 🇳🇬NG-2'
+  - '[OpenRay] 🇬🇧GB-183'
+  - '[OpenRay] 🇸🇰SK-22'
+  - '[OpenRay] 🇺🇸US-1113'
+  - '[OpenRay] 🇮🇱IL-7'
+  - '[OpenRay] 🇱🇹LT-35'
+  - '[OpenRay] 🇺🇸US-77'
+  - '[OpenRay] 🇺🇸US-51'
+  - NG【高速节点：https://vip.a3f.xyz】28
+  - '[OpenRay] 🇧🇷BR-58'
+  - '[OpenRay] 🇺🇸US-380'
+  - '[OpenRay] 🇩🇪DE-9'
+  - '[OpenRay] 🇺🇸US-12'
+  - NE【高速节点：https://vip.a3f.xyz】32
+  - '[OpenRay] 🇺🇸US-243'
+  - '[OpenRay] 🇧🇷BR-104'
+  - '[OpenRay] 🇺🇸US-1568'
+  - '[OpenRay] 🇺🇸US-494'
+  - '[OpenRay] 🇺🇸US-971'
+  - '[OpenRay] 🇱🇹LT-53'
+  - '[OpenRay] 🇩🇪DE-173'
+  - '[OpenRay] 🇸🇨SC-15'
+  - '[OpenRay] 🇫🇮FI-37'
+  - 🇳🇱NL荷兰丨yoyapai.com (2)
+  - '[OpenRay] 🇺🇸US-642'
+  - '[OpenRay] 🇺🇸US-800'
+  - '[OpenRay] 🇱🇹LT-29'
+  - '[OpenRay] 🇩🇪DE-116'
+  - '[OpenRay] 🇪🇸ES-18'
+  - '[OpenRay] 🇺🇸US-421'
+  - '[OpenRay] 🇸🇰SK-12'
   - CA【高速节点：https://vip.a3f.xyz】37
-  - CA【高速节点：https://vip.a3f.xyz】36
   - CA【高速节点：https://vip.a3f.xyz】38
-  - '[OpenRay] 🌐XX-2021'
+  - CA【高速节点：https://vip.a3f.xyz】36
+  - US【高速节点：https://vip.a3f.xyz】35
   - '[OpenRay] 🌐XX-328'
-  - 🇬🇧
+  - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 3
+  - '[OpenRay] 🌐XX-2039'
+  - '[OpenRay] 🌐XX-230'
   - '[OpenRay] 🌐XX-1027'
-  - '[OpenRay] 🌐XX-139'
-  - 🇫🇮 Finland, Helsinki | [BL]
+  - '[OpenRay] 🌐XX-1355'
   - '[OpenRay] 🌐XX-1015'
   - '[OpenRay] 🌐XX-1551'
-  - '[OpenRay] 🌐XX-230'
-  - '[OpenRay] 🌐XX-2039'
-  - '[OpenRay] 🌐XX-1355'
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-44
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-45
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-14
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-15
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-16
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-17
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-46
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 🇸🇬 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-47
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-48
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-49
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-56
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-2
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-50
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-57
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-18
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-2
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-2
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-51
-  - 🇨🇦 Canada, Toronto | [BL]-2
-  - '[OpenRay] 🌐XX-638'
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-3
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-3
-  - 🇨🇦 Canada, Toronto | [BL]-3
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-58
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-59
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-52
-  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-3
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-4
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-53
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-54
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-55
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-60
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-5
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-61
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-62
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-63
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-64
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-65
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-56
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-66
-  - 🇨🇦 Canada, Toronto | [BL]-4
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-57
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-4
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-58
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-59
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-60
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-61
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-62
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-5
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-63
-  - '[OpenRay] 🌐XX-381'
+  - 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
   - 🇺🇸 United States | 🌐 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 | [BL]
-  - '[OpenRay] 🌐XX-213'
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-64
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-65
   - '@vpnsal'
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-66
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-67
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-6
+  - '[OpenRay] 🌐XX-381'
+  - '[OpenRay] 🌐XX-1081'
   - '[OpenRay] 🌐XX-81'
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-68
-  - '[OpenRay] 🌐XX-1192'
   - '[OpenRay] 🌐XX-332'
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-4
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 🇺🇸 | [BL]
-  - 🇧🇪 Belgium, Zaventem | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-7
+  - 🇺🇸 United States, Columbus | 🌐 | [BL]
+  - 🇦🇹 Austria, Vienna (Liesing) | [BL]
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]
+  - '[OpenRay] 🌐XX-1192'
+  - 🇩🇪 德国 | DEU 7
   - '[OpenRay] 🌐XX-420'
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-67
-  - '[OpenRay] 🌐XX-851'
+  - 🇸🇬 Singapore, Singapore (Queenstown Estate) | [BL]
   - '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
-  - '[OpenRay] 🌐XX-2053'
+  - 🇩🇪 德国 | DEU 10
+  - 🇩🇪 德国 | DEU 16
+  - SCP|HK
+  - '@ConfigV2RayNG-2'
+  - '[OpenRay] 🌐XX-213'
+  - trojan-blog.findlocaljobnetworkandbuildcommunityconnections.com
+  - '[OpenRay] 🌐XX-443'
+  - '[OpenRay] 🌐XX-913'
+  - 🇨🇦 Canada, Montreal | [BL]
+  - '[OpenRay] 🌐XX-1476'
+  - '[OpenRay] 🌐XX-824'
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]-3
+  - FI【高速节点：https://vip.a3f.xyz】20
+  - '@prrofile_purple'
+  - ❓未知丨yoyapai.com (44)
+  - 🇩🇪 德国 | DEU 6
+  - 🇩🇪 德国 | DEU 2
+  - 🇭🇰 香港 | HKG 2
+  - 🇩🇪 德国 | DEU 5
+  - 🇩🇪 德国 | DEU 12
+  - 🇭🇰 香港 | HKG 5
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 2
+  - 🇩🇪 德国 | DEU 15
+  - 节点日期：2026-11-28
+  - 🇹🇼 🇨🇳 台湾 | TWN 2
+  - 🇩🇪 Germany, Düsseldorf | 🌐 | [BL]
+  - 🇩🇪 Germany, Düsseldorf | 🌐 | [BL]-2
+  - '@ConfigV2RayNG-3'
+  - '@V2rayNGVPN-2'
+  - '[OpenRay] 🌐XX-732'
+  - 🇭🇰 Hong Kong, Fo Tan | [BL]
+  - '[OpenRay] 🌐XX-667'
+  - '[OpenRay] 🌐XX-1433'
+  - '[OpenRay] 🌐XX-1631'
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇯🇵 🇸🇪 | [BL]
+  - '[OpenRay] 🌐XX-1394'
+  - '[OpenRay] 🌐XX-545'
+  - 🇳🇱 The Netherlands, Amsterdam | 🌐 | [BL]
+  - '[OpenRay] 🌐XX-659'
+  - 🇸🇪 Sweden, Stockholm | 🌐 | [BL]
+  - '[OpenRay] 🌐XX-1082'
+  - '[OpenRay] 🌐XX-1771'
+  - '[OpenRay] 🌐XX-1277'
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]-5
+  - 🇯🇵 日本 | JPN 5
+  - 🇻🇳 越南 | VNM 2
+  - '[OpenRay] 🌐XX-537'
+  - '[OpenRay] 🌐XX-1017'
+  - '[OpenRay] 🌐XX-1769'
+  - '[OpenRay] 🌐XX-218'
+  - '[OpenRay] 🌐XX-1786'
+  - '[OpenRay] 🌐XX-78'
+  - '@v2ray_phoenix'
+  - HK【高速节点：https://vip.a3f.xyz】16
+  - 🌐سرور-2
+  - '[OpenRay] 🌐XX-1749'
+  - '[OpenRay] 🌐XX-1953'
+  - '[OpenRay] 🌐XX-1318'
+  - '[OpenRay] 🌐XX-1373'
+  - 🌐سرور-3
+  - ss-Ir.wbzo.ir
+  - 🇯🇵 日本 | JPN
+  - '[OpenRay] 🌐XX-362'
+  - 🇬🇧 英国 | GBR
+  - '[OpenRay] 🌐XX-50'
+  - '[OpenRay] 🇺🇸US-1619'
+  - '[OpenRay] 🌐XX-1266'
+  - '[OpenRay] 🌐XX-384'
+  - '[OpenRay] 🌐XX-1858'
+  - '[OpenRay] 🇳🇱NL-407'
+  - '[OpenRay] 🌐XX-592'
+  - '[OpenRay] 🌐XX-546'
+  - '[OpenRay] 🇩🇪DE-199'
+  - '[OpenRay] 🌐XX-2032'
+  - '[OpenRay] 🌐XX-1489'
+  - '[OpenRay] 🇳🇱NL-272'
+  - '[OpenRay] 🇮🇱IL-40'
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: HK-POOL
   type: url-test
   proxies:
-  - '[OpenRay] 🌐XX-1649'
-  - '[OpenRay] 🌐XX-533'
-  - '[OpenRay] 🌐XX-358'
-  - '[OpenRay] 🌐XX-805'
-  - '[OpenRay] 🌐XX-584'
+  - SCP|HK
+  - 🇭🇰 香港 | HKG 2
+  - 🇭🇰 香港 | HKG 5
+  - 🇭🇰 Hong Kong, Fo Tan | [BL]
+  - HK【高速节点：https://vip.a3f.xyz】16
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: JP-POOL
   type: url-test
   proxies:
-  - '[OpenRay] 🌐XX-1649'
-  - '[OpenRay] 🌐XX-533'
-  - '[OpenRay] 🌐XX-358'
-  - '[OpenRay] 🌐XX-805'
-  - '[OpenRay] 🌐XX-584'
+  - 🇯🇵 日本 | JPN 2
+  - 🇯🇵 日本 | JPN 3
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇯🇵 🇸🇪 | [BL]
+  - 🇯🇵 日本 | JPN 5
+  - 🇯🇵 日本 | JPN
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: SG-POOL
   type: url-test
   proxies:
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 🇸🇬 | [BL]
+  - 🇸🇬 Singapore, Singapore (Queenstown Estate) | [BL]
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: US-POOL
   type: url-test
   proxies:
-  - '[OpenRay] 🇺🇸US-1090'
+  - 美国+纽约(Prudential)
   - '[OpenRay] 🇺🇸US-268'
-  - '[OpenRay] 🇺🇸US-1568'
-  - '[OpenRay] 🇺🇸US-800'
+  - '[OpenRay] 🇺🇸US-1090'
+  - '[OpenRay] 🇺🇸US-296'
+  - '[OpenRay] 🇺🇸US-1017'
+  - '[OpenRay] 🇺🇸US-355'
+  - '[OpenRay] 🇺🇸US-626'
+  - '[OpenRay] 🇺🇸US-13'
   - '[OpenRay] 🇺🇸US-720'
   - '[OpenRay] 🇺🇸US-1125'
   - '[OpenRay] 🇺🇸US-305'
-  - '[OpenRay] 🇺🇸US-13'
-  - '[OpenRay] 🇺🇸US-421'
-  - '[OpenRay] 🇺🇸US-494'
-  - '[OpenRay] 🇺🇸US-1017'
+  - '[OpenRay] 🇺🇸US-661'
   - '[OpenRay] 🇺🇸US-1113'
+  - '[OpenRay] 🇺🇸US-77'
   - '[OpenRay] 🇺🇸US-51'
-  - '[OpenRay] 🇺🇸US-626'
   - '[OpenRay] 🇺🇸US-380'
   - '[OpenRay] 🇺🇸US-12'
-  - '[OpenRay] 🇺🇸US-296'
-  - '[OpenRay] 🇺🇸US-779'
+  - '[OpenRay] 🇺🇸US-243'
+  - '[OpenRay] 🇺🇸US-1568'
+  - '[OpenRay] 🇺🇸US-494'
   - '[OpenRay] 🇺🇸US-971'
-  - '[OpenRay] 🇺🇸US-989'
-  - '[OpenRay] 🇺🇸US-355'
   - '[OpenRay] 🇺🇸US-642'
-  - '[OpenRay] 🇺🇸US-1508'
-  - '[OpenRay] 🇺🇸US-77'
-  - '[OpenRay] 🇺🇸US-661'
-  - '[OpenRay] 🇺🇸US-26'
-  - '[OpenRay] 🇺🇸US-362'
+  - '[OpenRay] 🇺🇸US-800'
+  - '[OpenRay] 🇺🇸US-421'
   - US【高速节点：https://vip.a3f.xyz】35
+  - 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
   - 🇺🇸 United States | 🌐 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 🇺🇸 | [BL]
+  - 🇺🇸 United States, Columbus | 🌐 | [BL]
+  - 🇺🇸 美国 | USA 6
+  - 🇺🇸 美国 | USA 2
+  - '[OpenRay] 🇺🇸US-1619'
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: AI-POOL
   type: url-test
   proxies:
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-44
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-45
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-14
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-15
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-16
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-17
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-46
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 🇸🇬 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-47
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-48
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-49
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-56
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-2
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-50
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-57
-  - 🌐 Anycast-IP | 🇬🇧 🇷🇺 | [BL]-18
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-2
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-2
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-51
-  - 🇨🇦 Canada, Toronto | [BL]-2
-  - '[OpenRay] 🌐XX-638'
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-3
-  - 🌐 Anycast-IP | 🇨🇦 🇩🇪 🇫🇮 | [BL]-3
-  - 🇨🇦 Canada, Toronto | [BL]-3
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-58
-  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇷🇺 | [BL]-59
-  - 🌐 Anycast-IP | 🇨🇦 🇫🇮 | [BL]-52
+  - '[OpenRay] 🇺🇸US-1619'
+  - '[OpenRay] 🌐XX-1266'
+  - '[OpenRay] 🌐XX-384'
+  - 🌐 Anycast-IP | 🇨🇦 🇬🇧 🇯🇵 🇸🇪 | [BL]
+  - trojan-blog.findlocaljobnetworkandbuildcommunityconnections.com
+  - '[OpenRay] 🌐XX-443'
+  - '[OpenRay] 🌐XX-913'
+  - '@ConfigV2RayNG-3'
+  - '@V2rayNGVPN-2'
+  - 🌐 Anycast-IP | 🇨🇦 🇸🇪 🇺🇸 | [BL]
+  - '[OpenRay] 🌐XX-1017'
+  - 🇺🇸 United States | 🌐 | [BL]
+  - '[OpenRay] 🇺🇸US-268'
+  - '[OpenRay] 🇬🇧GB-257'
+  - '[OpenRay] 🌐XX-1769'
+  - 🇨🇦 Canada, Montreal | [BL]
+  - '[OpenRay] 🇺🇸US-1090'
+  - '[OpenRay] 🌐XX-218'
+  - '[OpenRay] 🌐XX-1649'
+  - '[OpenRay] 🌐XX-1476'
+  - '[OpenRay] 🌐XX-1858'
+  - '[OpenRay] 🌐XX-824'
+  - .𖥔 ݁ ˖ִ🛸༄˖°. | [BL]-3
+  - '[OpenRay] 🇳🇱NL-407'
+  - '[OpenRay] 🌐XX-592'
+  - '[OpenRay] 🌐XX-59'
+  - '[OpenRay] 🌐XX-1786'
+  - '[OpenRay] 🌐XX-533'
+  - '[OpenRay] 🌐XX-546'
+  - '[OpenRay] 🌐XX-328'
   url: http://www.gstatic.com/generate_204
   interval: 300
 - name: FALLBACK
